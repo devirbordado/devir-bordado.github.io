@@ -13,7 +13,10 @@ This repository currently serves as a place to document the initial development 
 - Plan the website structure
 - Document implementation decisions
 - Track future development
+  
+## Purpose
 
+A place where research, memory, embroidery and knowledge gradually take digital form.
 ---
 
 Created by Iara Lima.
