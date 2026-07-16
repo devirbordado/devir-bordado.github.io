@@ -1,2 +1,19 @@
-# website
-Official website of the Devir Bordado project.
+# Devir Bordado Website
+
+Official website for the Devir Bordado project.
+
+## Status
+
+Project in early planning stage.
+
+This repository currently serves as a place to document the initial development of the website.
+
+## Objectives
+
+- Plan the website structure
+- Document implementation decisions
+- Track future development
+
+---
+
+Created by Iara Lima.
