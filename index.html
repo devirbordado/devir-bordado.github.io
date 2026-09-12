@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Devir Bordado</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devir Bordado — Em gestação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5EFE3; /* Papiro */
+            font-family: 'Georgia', 'Times New Roman', serif;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Fio vermelho de bordado atravessando o fundo */
+        .fio {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(
+                to right,
+                transparent 0%,
+                #951822 15%,
+                #951822 85%,
+                transparent 100%
+            );
+            opacity: 0.25;
+            transform: translateY(-50%);
+            z-index: 0;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- CORAÇÃO PULSANTE --- */
+        .pulse-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .heartbeat {
+            width: 48px;
+            height: 48px;
+            position: relative;
+        }
+
+        .heartbeat::before,
+        .heartbeat::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 24px;
+            height: 38px;
+            background: #951822;
+            border-radius: 24px 24px 0 0;
+            animation: pulse 2.8s ease-in-out infinite;
+        }
+
+        .heartbeat::before {
+            left: 24px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heartbeat::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            animation-name: pulse-after;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: rotate(-45deg) scale(0.98);
+                background: #951822;
+            }
+            50% {
+                transform: rotate(-45deg) scale(1.05);
+                background: #B84A5A;
+            }
+        }
+
+        @keyframes pulse-after {
+            0%, 100% {
+                transform: rotate(45deg) scale(0.98);
+                background: #951822;
+            }
+            50% {
+                transform: rotate(45deg) scale(1.05);
+                background: #B84A5A;
+            }
+        }
+
+        /* --- TEXTO --- */
+        .frase {
+            color: #74415B; /* Magenta apagado */
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.12em;
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+
+        .frase span {
+            display: inline-block;
+            animation: respira 6s ease-in-out infinite;
+        }
+
+        @keyframes respira {
+            0%, 100% { opacity: 0.75; }
+            50% { opacity: 1; }
+        }
+
+        .assinatura {
+            color: #B8A893;
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-top: 2rem;
+            border-top: 1px solid #DDD1BE;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            .frase {
+                font-size: 1.15rem;
+                letter-spacing: 0.08em;
+            }
+            .heartbeat {
+                width: 36px;
+                height: 36px;
+            }
+            .heartbeat::before,
+            .heartbeat::after {
+                width: 18px;
+                height: 28px;
+                border-radius: 18px 18px 0 0;
+            }
+            .heartbeat::before {
+                left: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Em construção</h1>
-    <p>O site da Devir Bordado estará no ar em breve.</p>
+
+    <div class="fio"></div>
+
+    <div class="container">
+
+        <div class="pulse-container">
+            <div class="heartbeat"></div>
+        </div>
+
+        <p class="frase">
+            <span>Este espaço está em gestação.</span><br>
+            <span>Espere conosco.</span>
+        </p>
+
+        <div class="assinatura">
+            Devir Bordado
+        </div>
+
+    </div>
+
 </body>
 </html>
