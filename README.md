@@ -12,7 +12,7 @@ A creative research project dedicated to exploring embroidery as a practice of m
 
 **Status:** Development
 
-**Repository:** Private
+**Repository:** Public
 
 **License:** Not defined
 
@@ -48,9 +48,9 @@ Together, the name expresses the idea of embroidery as a process of becoming, wh
 
 ## Research Roadmap
 
-* [ ] Define the website structure
+* [X] Define the website structure
 * [ ] Organize content categories and collections
-* [ ] Develop the visual identity
+* [X] Develop the visual identity
 * [ ] Improve the user experience
 * [ ] Publish research and creative projects
 * [ ] Integrate multimedia documentation
