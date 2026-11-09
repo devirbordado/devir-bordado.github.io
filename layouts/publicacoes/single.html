@@ -1,0 +1,103 @@
+{{ define "main" }}
+{{ $p := index hugo.Data.pub site.Language.Lang }}
+{{ $a := partial "pub-split.html" .Params.authors }}
+{{ $kind := "" }}{{ $tipo := .Params.tipo }}{{ range $p.kinds }}{{ if eq .id $tipo }}{{ $kind = .label }}{{ end }}{{ end }}
+<link rel="stylesheet" href="{{ "css/paginas.css" | relURL }}">
+<div class="wrap pg">
+  {{ partial "divider.html" (dict "label" .Parent.Title "color" "#556A82" "tag" "p") }}
+  <div class="pg-ficha">
+  {{ partial "voltar.html" (dict "url" .Parent.RelPermalink "label" $p.back) }}
+
+  <article class="ficha">
+    <header>
+      <p class="ficha-kind">{{ $kind }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}<p class="ficha-sub">{{ . }}</p>{{ end }}
+    </header>
+
+    <dl class="ficha-meta">
+      <div>
+        <dt>{{ $p.date }}</dt>
+        <dd><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $p.date_fmt }}</time></dd>
+      </div>
+      <div>
+        <dt>{{ $p.authorship }}</dt>
+        <dd>
+          {{ range $a.main }}
+            <span class="ficha-person">{{ .given }} {{ .family }}
+              <small>
+                {{ with .orcid }}{{ $p.orcid }}: <a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">https://orcid.org/{{ . }}</a>{{ end }}
+                {{ with .lattes }}<br>{{ $p.lattes }}: <a href="http://lattes.cnpq.br/{{ . }}" target="_blank" rel="noopener noreferrer">http://lattes.cnpq.br/{{ . }}</a>{{ end }}
+              </small>
+            </span>
+          {{ end }}
+        </dd>
+      </div>
+      {{ range $a.adv }}
+      <div>
+        <dt>{{ index $p.roles .role }}</dt>
+        <dd>
+          <span class="ficha-person">{{ .given }} {{ .family }}
+            <small>{{ with .orcid }}{{ $p.orcid }}: <a href="https://orcid.org/{{ . }}" target="_blank" rel="noopener noreferrer">https://orcid.org/{{ . }}</a>{{ end }}</small>
+          </span>
+        </dd>
+      </div>
+      {{ end }}
+      {{ with .Params.doi }}
+      <div>
+        <dt>{{ $p.doi }}</dt>
+        <dd><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener noreferrer">https://doi.org/{{ . }}</a></dd>
+      </div>
+      {{ end }}
+      {{ with .Params.idiomas }}
+      <div>
+        <dt>{{ $p.languages }}</dt>
+        <dd>{{ $l := slice }}{{ range . }}{{ $l = $l | append (index $p.langs .) }}{{ end }}{{ delimit $l ", " }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+
+    <section class="ficha-resumo" aria-labelledby="h-resumo">
+      <h2 id="h-resumo" class="ficha-h">{{ $p.abstract }}</h2>
+      {{ .Content }}
+      {{ with .Params.palavras_chave }}
+        <p class="ficha-kw"><strong>{{ $p.keywords }}:</strong> {{ delimit . ". " }}.</p>
+      {{ end }}
+    </section>
+
+    {{ with .Params.fonte_url }}
+    <p class="ficha-acesso">
+      <a class="pub-btn" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $p.access }}</a>
+      {{ with $.Params.fonte }}<small>{{ $p.access_at }} {{ . }}</small>{{ end }}
+    </p>
+    {{ end }}
+
+    <section class="ficha-cite" aria-labelledby="h-cite">
+      <h2 id="h-cite" class="ficha-h">{{ $p.cite }}</h2>
+      <div class="cite">
+        <h3>ABNT</h3>
+        <p class="cite-text" id="cite-abnt">{{ partial "pub-cite-abnt.html" . }}</p>
+        <button type="button" class="cite-copy" data-copy="#cite-abnt" data-done="{{ $p.copied }}">{{ $p.copy }}</button>
+      </div>
+      <p class="cite-note">{{ $p.cite_note }}</p>
+      <div class="cite">
+        <h3>APA</h3>
+        <p class="cite-text" id="cite-apa">{{ partial "pub-cite-apa.html" . }}</p>
+        <button type="button" class="cite-copy" data-copy="#cite-apa" data-done="{{ $p.copied }}">{{ $p.copy }}</button>
+      </div>
+    </section>
+
+    <footer class="ficha-lic">
+      {{ $cc := index hugo.Data.cc (.Params.licenca | default "") }}
+      {{ if $cc }}
+        {{ $href := printf "https://creativecommons.org/licenses/%s/deed.%s" $cc.path $p.deed }}
+        <p>{{ $p.license_pre }} <a href="{{ $href }}" target="_blank" rel="license noopener noreferrer">{{ $cc.name }}</a></p>
+        <a class="lic-badge" href="{{ $href }}" target="_blank" rel="license noopener noreferrer"><img src="{{ printf "assets/images/cc/%s.svg" .Params.licenca | relURL }}" alt="{{ $cc.name }}" width="96" height="34" loading="lazy"></a>
+      {{ else }}
+        <p>{{ $p.license_none }}</p>
+      {{ end }}
+    </footer>
+  </article>
+</div></div>
+<script src="{{ "js/paginas.js" | relURL }}" defer></script>
+{{ end }}

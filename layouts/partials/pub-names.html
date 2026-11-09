@@ -1,0 +1,6 @@
+{{- /* Nomes por extenso: "A", "A e B", "A, B e C". Recebe dict list + and */ -}}
+{{- $n := len .list -}}
+{{- range $i, $a := .list -}}
+  {{- if $i -}}{{- if eq $i (sub $n 1) }} {{ $.and }} {{ else }}, {{ end -}}{{- end -}}
+  {{- $a.given }} {{ $a.family -}}
+{{- end -}}

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<link rel="stylesheet" href="{{ "css/paginas.css" | relURL }}">
+<div class="wrap pg pg-txt pg-sobre">
+  {{ partial "divider.html" (dict "label" .Title "color" "#5A4B3E" "tag" "h1") }}
+
+  {{ with .Params.lab }}
+  <section class="sobre-lab" aria-labelledby="s-lab">
+    <h2 id="s-lab">{{ .title }}</h2>
+    {{ range .text }}<p>{{ . | markdownify }}</p>{{ end }}
+  </section>
+  {{ end }}
+
+  <hr class="sobre-rule" aria-hidden="true">
+
+  {{ with .Params.symbol }}
+  <section class="sobre-dupla sobre-simbolo" aria-labelledby="s-sim">
+    <figure class="sobre-fig">
+      <img src="{{ "assets/images/sobre/simbolo.webp" | relURL }}" alt="{{ .alt }}" width="1000" height="688" loading="lazy" decoding="async">
+    </figure>
+    <div class="sobre-txt">
+      <h2 id="s-sim">{{ .title }}</h2>
+      {{ range .text }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <hr class="sobre-rule" aria-hidden="true">
+
+  {{ with .Params.founder }}
+  <section class="sobre-dupla sobre-fundadora" aria-labelledby="s-fun">
+    <div class="sobre-txt">
+      <h2 id="s-fun">{{ .title }}</h2>
+      {{ range .text }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+    <figure class="sobre-fig">
+      <img src="{{ "assets/images/sobre/iara-fundadora.webp" | relURL }}" alt="{{ .alt }}" width="853" height="1280" loading="lazy" decoding="async">
+    </figure>
+  </section>
+  {{ end }}
+</div>
+{{ end }}

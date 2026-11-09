@@ -1,0 +1,15 @@
+{{- /* Cena de erro: pontilhado que desce em curva + mensagem principal ao lado + mensagem variável abaixo.
+       Parâmetros: kind (chave de err.msgs), h1 (bool), hidden (bool), p (rótulos do idioma) */ -}}
+{{- $p := .p -}}
+{{- $kind := .kind | default "nao-encontrada" -}}
+<section class="fio" data-fio{{ if .hidden }} hidden{{ end }}>
+  <div class="fio-top" aria-hidden="true"></div>
+  <div class="fio-body">
+    <svg class="fio-curve" viewBox="0 0 210 530" aria-hidden="true" focusable="false"><path d="M10,12 C12.8,14.2 21.8,17.5 27,25 C32.2,32.5 38.5,45.0 41,57 C43.5,69.0 43.7,84.3 42,97 C40.3,109.7 34.8,120.3 31,133 C27.2,145.7 20.7,159.7 19,173 C17.3,186.3 18.3,200.7 21,213 C23.7,225.3 29.0,236.7 35,247 C41.0,257.3 47.0,267.3 57,275 C67.0,282.7 82.8,287.5 95,293 C107.2,298.5 120.0,301.5 130,308 C140.0,314.5 149.2,321.7 155,332 C160.8,342.3 163.2,358.2 165,370 C166.8,381.8 168.0,392.5 166,403 C164.0,413.5 159.0,424.0 153,433 C147.0,442.0 138.5,452.0 130,457 C121.5,462.0 112.5,463.7 102,463 C91.5,462.3 76.8,458.5 67,453 C57.2,447.5 47.2,438.3 43,430 C38.8,421.7 38.7,411.3 42,403 C45.3,394.7 53.8,385.8 63,380 C72.2,374.2 85.8,369.2 97,368 C108.2,366.8 120.0,369.7 130,373 C140.0,376.3 148.5,381.0 157,388 C165.5,395.0 174.7,405.5 181,415 C187.3,424.5 192.2,434.2 195,445 C197.8,455.8 198.3,468.7 198,480 C197.7,491.3 193.8,507.5 193,513"/></svg>
+    {{ if .h1 }}<h1 class="fio-main" data-fio-main>{{ $p.err.main }}</h1>{{ else }}<p class="fio-main" data-fio-main>{{ $p.err.main }}</p>{{ end }}
+  </div>
+  <div class="fio-low">
+    <p class="fio-msg" data-fio-msg>{{ index $p.err.msgs $kind }}</p>
+    <p class="fio-links"><a href="{{ "" | relLangURL }}" data-fio-home>{{ $p.err.home }}</a><a href="{{ (cond (eq site.Language.Lang "en-us") "search/" "busca/") | relLangURL }}" data-fio-search>{{ $p.err.search }}</a></p>
+  </div>
+</section>

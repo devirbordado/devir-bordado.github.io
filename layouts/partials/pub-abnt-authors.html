@@ -1,0 +1,8 @@
+{{- /* ABNT: SOBRENOME, Nome; até 3 autores, depois et al. */ -}}
+{{- $out := slice -}}
+{{- range . -}}
+  {{- $out = $out | append (printf "%s, %s" (upper .family) .given) -}}
+{{- end -}}
+{{- $res := "" -}}
+{{- if gt (len $out) 3 -}}{{- $res = printf "%s et al." (index $out 0) -}}{{- else -}}{{- $res = delimit $out "; " -}}{{- end -}}
+{{- return $res -}}

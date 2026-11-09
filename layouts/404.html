@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ $p := index hugo.Data.pub site.Language.Lang }}
+<link rel="stylesheet" href="{{ "css/paginas.css" | relURL }}">
+<div class="pg-erro">
+  {{ partial "fio-erro.html" (dict "p" $p "kind" "nao-encontrada" "h1" true) }}
+</div>
+{{- /* Textos dos dois idiomas, para o JS escolher conforme o endereço (GitHub Pages serve um único 404.html). */ -}}
+<script type="application/json" id="erro-dados">{{ dict "pt-br" (index hugo.Data.pub "pt-br").err "en-us" (index hugo.Data.pub "en-us").err | jsonify | safeJS }}</script>
+<script src="{{ "js/erro.js" | relURL }}" defer></script>
+{{ end }}

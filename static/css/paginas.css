@@ -1,0 +1,138 @@
+/* Devir Bordado — Publicações, Linhas de pesquisa, Sobre DB, Busca e Erro.
+   Usa as variáveis do site quando existem (--text, --bg); os valores após a vírgula são reserva. */
+.pg { padding-bottom: 6rem; color: var(--text, #35322F); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pg a { color: #74415B; text-underline-offset: .18em; }
+.pg a:hover, .pg a:focus-visible { color: #951822; }
+.pub-btn { display: inline-block; padding: .7rem 1.4rem; background: #556A82; color: #FDFBF7 !important; text-decoration: none; border: 0; border-radius: 2px; font: inherit; cursor: pointer; }
+.pub-btn:hover, .pub-btn:focus-visible { background: #951822; }
+
+/* ---------- Publicações: listagem ---------- */
+.pub-intro { max-width: 44rem; margin: 3rem auto 4.5rem; line-height: 1.75; font-size: 1.05rem; }
+.pub-sec { max-width: 52rem; margin: 0 auto 3.75rem; }
+.pub-rule { display: flex; align-items: center; gap: 1rem; margin: 0 0 1.6rem; font-size: 1.05rem; font-weight: 500; letter-spacing: .03em; }
+.pub-rule::before { content: ""; width: 2.5rem; border-top: 1px solid #B8A893; }
+.pub-rule::after { content: ""; flex: 1; border-top: 1px solid #B8A893; }
+.pub-item { margin: 0 0 1.8rem; }
+.pub-item h3 { margin: 0 0 .4rem; font-size: 1.15rem; line-height: 1.45; font-weight: 400; }
+.pub-item h3 a { font-weight: 600; text-decoration: none; }
+.pub-item h3 a:hover { text-decoration: underline; }
+.pub-meta { margin: 0; font-size: .92rem; line-height: 1.6; opacity: .85; }
+.pub-empty { margin: 0; font-size: .95rem; font-style: italic; opacity: .7; }
+
+/* ---------- Publicações: ficha ---------- */
+.pg-ficha { max-width: 46rem; margin: 0 auto; }
+.ficha-back { margin: 2rem 0 2.5rem; font-size: .95rem; }
+.ficha-back a { text-decoration: none; }
+.ficha-kind { margin: 0 0 .8rem; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: #556A82; }
+.ficha h1 { margin: 0; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.2; font-weight: 500; }
+.ficha-sub { margin: .6rem 0 0; font-size: 1.25rem; line-height: 1.45; opacity: .85; }
+.ficha-meta { margin: 2.5rem 0 3rem; padding: 1.5rem 0; border-top: 1px solid #B8A893; border-bottom: 1px solid #B8A893; display: grid; gap: 1.1rem; }
+.ficha-meta div { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; }
+.ficha-meta dt { font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; opacity: .7; padding-top: .15rem; }
+.ficha-meta dd { margin: 0; overflow-wrap: anywhere; }
+.ficha-person { display: block; margin-bottom: .55rem; }
+.ficha-person:last-child { margin-bottom: 0; }
+.ficha-person small { display: block; font-size: .78rem; line-height: 1.6; opacity: .9; }
+.ficha-h { margin: 0 0 1rem; font-size: 1.1rem; font-weight: 600; letter-spacing: .02em; color: #556A82; }
+.ficha-resumo p { line-height: 1.8; margin: 0 0 1.1rem; text-align: justify; hyphens: auto; }
+.ficha-kw { margin-top: 1.4rem !important; text-align: left !important; }
+.ficha-acesso { margin: 2.5rem 0 3.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; }
+.ficha-acesso small { opacity: .7; }
+.cite { position: relative; margin: 0 0 1.2rem; padding: 1rem 1.2rem; background: #F5EFE3; border-radius: 3px; }
+.cite h3 { margin: 0 0 .5rem; font-size: .8rem; letter-spacing: .12em; }
+.cite-text { margin: 0 4.5rem 0 0; font-size: .93rem; line-height: 1.7; overflow-wrap: anywhere; }
+.cite-copy { position: absolute; top: .8rem; right: .9rem; padding: .25rem .7rem; font: inherit; font-size: .8rem; color: #35322F; background: transparent; border: 1px solid #B8A893; border-radius: 2px; cursor: pointer; }
+.cite-copy:hover, .cite-copy:focus-visible { border-color: #951822; color: #951822; }
+.cite-note { margin: -.4rem 0 1.2rem; font-size: .8rem; opacity: .7; }
+.ficha-lic { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid #B8A893; font-size: .9rem; }
+.ficha-lic p { margin: 0 0 .8rem; }
+.lic-badge { display: inline-block; line-height: 0; }
+.lic-badge img { display: block; }
+
+/* ---------- Páginas textuais (Linhas, Sobre) ---------- */
+.pg-txt > :where(:not(.divider)) { max-width: 46rem; margin-left: auto; margin-right: auto; }
+.txt-lede { margin: 3rem 0 5rem; }
+.txt-lede p, .pg-txt p { line-height: 1.85; font-size: 1.05rem; margin: 0 0 1.25rem; }
+
+/* Linhas de pesquisa: fio vertical sutil ligando os três blocos */
+.fio-v { position: relative; padding-left: 2.75rem; }
+.fio-v::before { content: ""; position: absolute; left: .55rem; top: .6rem; bottom: 0; border-left: 2px dotted #667C9B; opacity: .55; }
+.linha { position: relative; margin: 0 0 7rem; }
+.linha:last-child { margin-bottom: 0; }
+.fio-no { position: absolute; left: -2.55rem; top: .35rem; width: 11px; height: 11px; border-radius: 50%; background: #FDFBF7; border: 2px solid #667C9B; }
+.linha-num { margin: 0 0 .5rem !important; font-size: .8rem !important; letter-spacing: .14em; text-transform: uppercase; color: #566C8B; }
+.linha h2 { margin: 0 0 1.6rem; font-size: clamp(1.5rem, 3vw, 1.95rem); line-height: 1.3; font-weight: 500; }
+.linha-manifest { margin-top: 2rem; padding-left: 1.2rem; border-left: 1px solid #B8A893; }
+.linha-manifest h3 { margin: 0 0 .5rem; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: #566C8B; font-weight: 600; }
+.linha-manifest p { margin: 0 !important; }
+
+/* Sobre DB */
+.pg-sobre section h2 { margin: 0 0 1.6rem; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 500; color: #5A4B3E; }
+.sobre-lab { margin: 4rem auto 0; text-align: center; max-width: 38rem; }
+.sobre-rule { width: 3rem; margin: 6rem auto; border: 0; border-top: 1px solid #B8A893; }
+.pg-sobre > :where(:not(.divider)) { max-width: 62rem; }
+.sobre-dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.sobre-simbolo { grid-template-columns: 5fr 7fr; }
+.sobre-fundadora { grid-template-columns: 7fr 5fr; align-items: start; }
+.sobre-fig { margin: 0; }
+.sobre-fig img { display: block; width: 100%; height: auto; }
+.sobre-fundadora .sobre-fig img { border-radius: 3px; }
+
+/* ---------- Busca ---------- */
+.pg-busca { padding-top: 3rem; }
+.pg-busca .divider { margin-top: 0; }
+.busca-form { display: flex; gap: .75rem; max-width: 40rem; margin: 0 auto 2.5rem; }
+.busca-form input { flex: 1; min-width: 0; padding: .8rem 1rem; font: inherit; font-size: 1.1rem; color: #35322F; background: #FDFBF7; border: 1px solid #B8A893; border-radius: 2px; }
+.busca-form input:focus { outline: 2px solid #74415B; outline-offset: 1px; }
+.busca-form button { padding: .8rem 1.4rem; font: inherit; color: #FDFBF7; background: #74415B; border: 0; border-radius: 2px; cursor: pointer; }
+.busca-form button:hover, .busca-form button:focus-visible { background: #951822; }
+.busca-status { margin: 2.5rem 0 1.5rem; text-align: center; font-size: .95rem; opacity: .8; }
+.busca-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.rcard { padding: 1.25rem 1.3rem 1.4rem; background: #F5EFE3; border-top: 3px solid var(--c, #5A4B3E); border-radius: 2px; }
+.rcard-sec { margin: 0 0 .5rem !important; font-size: .74rem !important; letter-spacing: .14em; text-transform: uppercase; color: color-mix(in srgb, var(--c, #5A4B3E) 65%, #35322F); }
+.rcard h2 { margin: 0 0 .4rem; font-size: 1.12rem; line-height: 1.35; font-weight: 600; }
+.rcard h2 a { text-decoration: none; }
+.rcard h2 a:hover { text-decoration: underline; }
+.rcard-sub { margin: 0 0 .6rem !important; font-size: .92rem !important; opacity: .85; }
+.rcard-txt { margin: 0 !important; font-size: .9rem !important; line-height: 1.65 !important; opacity: .85; }
+.rcard mark { background: #DDD1BE; color: inherit; padding: 0 .1em; }
+.busca-mais { text-align: center; margin: 2.5rem 0 0; }
+
+/* ---------- Erro: o fio que desce em curva ---------- */
+.pg-erro { width: 100%; overflow-x: clip; color: var(--text, #35322F); background: var(--bg, #FDFBF7); }
+.fio { position: relative; max-width: 64rem; margin: 3rem auto 6rem; padding: 0 1.25rem; }
+.fio[hidden] { display: none; }
+.fio-top { position: absolute; top: 11px; left: calc(50% - 50vw); width: 50vw; border-top: 2px dotted #35322F; }
+.fio-body { display: flex; align-items: center; gap: 2.5rem; margin-left: calc(50% - 9px); }
+.fio-curve { flex: none; width: 190px; height: auto; overflow: visible; }
+.fio-curve path { fill: none; stroke: #35322F; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 0 4.4; }
+.fio-main { margin: 0; font-size: clamp(1.7rem, 3.4vw, 2.6rem); line-height: 1.25; font-weight: 400; }
+.fio-low { max-width: 36rem; margin: 3rem auto 0; text-align: center; }
+.fio-msg { margin: 0 0 1.5rem; font-size: 1.1rem; line-height: 1.7; }
+.fio-links { margin: 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.fio a { color: #74415B; }
+.fio a:hover, .fio a:focus-visible { color: #951822; }
+
+/* ---------- Telas menores ---------- */
+@media (max-width: 960px) { .busca-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) {
+  .sobre-dupla, .sobre-simbolo, .sobre-fundadora { grid-template-columns: 1fr; gap: 2rem; }
+  .sobre-simbolo .sobre-fig { max-width: 18rem; margin: 0 auto; }
+  .sobre-fundadora .sobre-fig { order: -1; max-width: 18rem; margin: 0 auto; }
+  .sobre-rule { margin: 4rem auto; }
+  .ficha-meta div { grid-template-columns: 1fr; gap: .25rem; }
+  .cite-text { margin-right: 0; }
+  .cite-copy { position: static; margin-top: .7rem; }
+  .fio-body { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .fio-curve { width: 130px; }
+  .fio-main { margin-left: -100%; width: calc(200% + 18px); }
+  .fio-low { margin-top: 2rem; }
+}
+@media (max-width: 600px) {
+  .busca-grid { grid-template-columns: 1fr; }
+  .busca-form { flex-direction: column; }
+  .fio-v { padding-left: 2.2rem; }
+  .fio-no { left: -2.05rem; }
+  .linha { margin-bottom: 5rem; }
+}

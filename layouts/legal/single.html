@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ $u := index hugo.Data.ui site.Language.Lang }}
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#5A4B3E" "tag" "h1") }}
+<div class="legal-doc">
+<p class="upd">{{ $u.updated }} {{ time.AsTime .Params.updated | time.Format ":date_long" }}. {{ $u.version }} {{ .Params.version }}.</p>
+{{ .Content }}
+</div>
+</div>
+{{ end }}

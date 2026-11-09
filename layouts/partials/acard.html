@@ -1,0 +1,4 @@
+{{ $p := . }}{{ $u := index hugo.Data.ui site.Language.Lang }}<article class="bcard acard">
+<a class="cv" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="{{ $p.Params.img }}" alt="" loading="lazy"></a>
+<div class="tx"><p>{{ $u.l_colecao }}:</p><h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2></div>
+</article>

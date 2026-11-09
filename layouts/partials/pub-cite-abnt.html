@@ -1,0 +1,18 @@
+{{- /* Citação ABNT (NBR 6023) gerada dos campos da publicação. Aceita o campo "abnt" como substituição manual. */ -}}
+{{- $page := . -}}
+{{- if .Params.abnt -}}{{- .Params.abnt -}}{{- else -}}
+{{- $p := index hugo.Data.pub site.Language.Lang -}}
+{{- $a := partial "pub-split.html" .Params.authors -}}
+{{- $names := partial "pub-abnt-authors.html" $a.main -}}
+{{- $t := .Title -}}{{- if eq $t (upper $t) -}}{{- $t = strings.FirstUpper (lower $t) -}}{{- end -}}
+{{- $full := $t -}}{{- with .Params.subtitle -}}{{- $full = printf "%s: %s" $t . -}}{{- end -}}
+{{- $y := .Date.Year -}}
+{{- $url := .Params.citar_url | default .Params.fonte_url -}}
+{{ $names }}. {{ $full }}.
+{{- if eq .Params.modelo_abnt "evento" }} In: {{ .Params.evento }}, {{ .Params.edicao }}., {{ $y }}, {{ .Params.local }}. Anais [...]. {{ .Params.local }}: {{ .Params.editora }}, {{ $y }}.
+{{- else if eq .Params.modelo_abnt "trabalho" }}{{ with $a.adv }}{{ $o := index . 0 }} {{ index $p.roles $o.role }}: {{ $o.given }} {{ $o.family }}.{{ end }} {{ $y }}. {{ .Params.grau }} – {{ .Params.instituicao }}, {{ .Params.local }}, {{ $y }}.
+{{- else if eq .Params.modelo_abnt "documento" }} [S. l.]: {{ .Params.editora }}, {{ $y }}.
+{{- else }} {{ .Params.editora }}, {{ $y }}.
+{{- end }}
+{{- with .Params.doi }} DOI: https://doi.org/{{ . }}.{{ end }} Disponível em: {{ $url }}. Acesso em: {{ partial "pub-acesso.html" . | chomp }}.
+{{- end -}}

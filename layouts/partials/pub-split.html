@@ -1,0 +1,7 @@
+{{- /* Separa autores (sem papel) de orientadores (com campo role). Retorna dict main/adv */ -}}
+{{- $main := slice -}}
+{{- $adv := slice -}}
+{{- range . -}}
+  {{- if .role -}}{{- $adv = $adv | append . -}}{{- else -}}{{- $main = $main | append . -}}{{- end -}}
+{{- end -}}
+{{- return (dict "main" $main "adv" $adv) -}}

@@ -1,0 +1,6 @@
+{{- /* Início do texto da página, em texto puro, cortado sem esperar o fim da frase.
+       Páginas sem texto (ex.: herbário, que só tem ficha) usam nome popular e família. */ -}}
+{{- $t := trim (replaceRE "\\s+" " " (.Plain | htmlUnescape)) " " -}}
+{{- if not $t -}}{{- $t = delimit (slice .Params.popular .Params.familia | complement (slice "")) " · " -}}{{- end -}}
+{{- $w := split $t " " -}}
+{{- if gt (len $w) 40 }}{{ delimit (first 40 $w) " " }}…{{ else }}{{ $t }}{{ end -}}

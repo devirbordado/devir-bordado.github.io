@@ -1,0 +1,3 @@
+{{- /* Imagem solta no texto. Uso: {{< figura src="/assets/images/blog/X.webp" alt="descrição" legenda="opcional" >}} */ -}}
+{{- if not (.Page.Store.Get "css-fig") }}{{ .Page.Store.Set "css-fig" true }}<style>.fig{margin:2rem auto;text-align:center}.fig img{display:block;max-width:min(100%,560px);max-height:80vh;width:auto;height:auto;margin:0 auto;border:6px solid var(--bg,#FDFBF7);box-shadow:0 0 0 1px #DDD1BE}.fig figcaption{margin-top:.5rem;font-size:.85rem}</style>{{ end -}}
+<figure class="fig"><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">{{ with .Get "legenda" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>

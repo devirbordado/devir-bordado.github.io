@@ -1,0 +1,8 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/acervo.css">
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#996515" "tag" "h1") }}
+<div class="pagehead"><p>{{ .Description }}</p></div>
+<div class="bgrid hgrid">{{ range .Pages.ByWeight }}{{ partial "acard.html" . }}{{ end }}</div>
+</div>
+{{ end }}

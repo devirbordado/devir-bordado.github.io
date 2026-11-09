@@ -1,0 +1,34 @@
+baseURL = "https://devirbordado.space/"
+title = "Devir Bordado"
+preserveTaxonomyNames = true
+removePathAccents = true
+defaultContentLanguage = "pt-br"
+defaultContentLanguageInSubdir = true
+timeZone = "America/Sao_Paulo"
+
+[languages.pt-br]
+  locale = "pt-BR"
+  label = "PT-BR"
+  weight = 1
+  contentDir = "content/pt-br"
+  [languages.pt-br.taxonomies]
+    selo = "selos"
+    tag = "tags"
+
+[languages.en-us]
+  locale = "en-US"
+  label = "EN-US"
+  weight = 2
+  contentDir = "content/en-us"
+  [languages.en-us.taxonomies]
+    seal = "seals"
+    tag = "tags"
+
+# Feeds RSS: só a Home (novidades) e as seções acervo, blog, herbário e publicações.
+# Selos, tags, páginas avulsas e demais áreas ficam sem feed.
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+  taxonomy = ["html"]
+  term = ["html"]
+  page = ["html"]

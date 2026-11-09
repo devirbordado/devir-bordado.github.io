@@ -1,0 +1,4 @@
+{{ $p := .p }}{{ $u := index hugo.Data.ui site.Language.Lang }}<article class="bcard hcard"{{ if .hide }} hidden{{ end }}>
+<a class="cv" href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true"><img src="/assets/images/herbario/{{ $p.Params.translationKey }}-capa.webp" alt="" loading="lazy"></a>
+<div class="tx"><p>{{ $u.l_fam }}: {{ $p.Params.familia }}</p><p>{{ $u.l_classe }}: {{ $p.Params.classe }}</p><p>{{ $u.l_sci }}: <a href="{{ $p.RelPermalink }}"><em>{{ $p.Title }}</em></a></p><p>{{ $u.l_pop }}: {{ $p.Params.popular }}</p></div>
+</article>

@@ -1,0 +1,3 @@
+{{- /* Data de acesso no formato ABNT (ex.: 3 nov. 2026). O JS atualiza para o dia da visita; este é o valor da construção do site. */ -}}
+{{- $m := slice "jan." "fev." "mar." "abr." "maio" "jun." "jul." "ago." "set." "out." "nov." "dez." -}}
+<span data-acesso>{{ now.Day }} {{ index $m (sub (int now.Month) 1) }} {{ now.Year }}</span>

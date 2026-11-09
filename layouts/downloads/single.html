@@ -1,0 +1,21 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/digital.css">
+<style>
+.heart-box{display:flex;justify-content:center;margin:0 0 2.5rem}
+.heartbeat{width:48px;height:48px;position:relative}
+.heartbeat::before,.heartbeat::after{content:"";position:absolute;top:0;width:24px;height:38px;background:#951822;border-radius:24px 24px 0 0;animation:db-pulse 1.4s ease-in-out infinite}
+.heartbeat::before{left:24px;transform:rotate(-45deg);transform-origin:0 100%}
+.heartbeat::after{left:0;transform:rotate(45deg);transform-origin:100% 100%;animation-name:db-pulse-r}
+@keyframes db-pulse{0%,28%,100%{transform:rotate(-45deg) scale(.95);background:#951822}14%{transform:rotate(-45deg) scale(1.12);background:#B84A5A}42%{transform:rotate(-45deg) scale(1);background:#951822}}
+@keyframes db-pulse-r{0%,28%,100%{transform:rotate(45deg) scale(.95);background:#951822}14%{transform:rotate(45deg) scale(1.12);background:#B84A5A}42%{transform:rotate(45deg) scale(1);background:#951822}}
+@media (prefers-reduced-motion:reduce){.heartbeat::before,.heartbeat::after{animation:none}.heartbeat::before{transform:rotate(-45deg)}.heartbeat::after{transform:rotate(45deg)}}
+@media (max-width:480px){.heartbeat{width:36px;height:36px}.heartbeat::before,.heartbeat::after{width:18px;height:28px;border-radius:18px 18px 0 0}.heartbeat::before{left:18px}}
+</style>
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#5E2751" "tag" "h1") }}
+<div class="gest">
+<div class="heart-box" role="img" aria-label="{{ if hasPrefix site.Language.Lang "en" }}A pulsing heart{{ else }}Um coração pulsando{{ end }}"><div class="heartbeat" aria-hidden="true"></div></div>
+<div class="frase">{{ .Content }}</div>
+</div>
+</div>
+{{ end }}

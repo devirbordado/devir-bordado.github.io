@@ -1,0 +1,10 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/digital.css">
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#5E2751" "tag" "h1") }}
+<div class="gest">
+<svg class="bits" viewBox="0 0 336 210" aria-hidden="true" focusable="false">{{ range $r := seq 0 6 }}{{ range $c := seq 0 13 }}<text x="{{ add 12 (mul $c 24) }}" y="{{ add 24 (mul $r 30) }}" class="bit" style="animation-delay:{{ mod (add (mul $r 7) (mul $c 5)) 9 }}s">{{ mod (add (mul $r 3) (mul $c $c) $c) 2 }}</text>{{ end }}{{ end }}</svg>
+<div class="frase">{{ .Content }}</div>
+</div>
+</div>
+{{ end }}

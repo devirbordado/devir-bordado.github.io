@@ -1,0 +1,10 @@
+{{- /* Lista única usada pela Home ("Mais recentes") e pelo feed da Home.
+       Só entram páginas dos tipos de data/novidades.json que tenham data real
+       (página sem data, como os itens antigos do herbário, fica de fora).
+       Para incluir Downloads no futuro, basta acrescentar "downloads" em data/novidades.json. */ -}}
+{{- $tipos := hugo.Data.novidades.tipos -}}
+{{- $out := slice -}}
+{{- range site.RegularPages -}}
+  {{- if and (in $tipos .Type) (not .Date.IsZero) -}}{{- $out = $out | append . -}}{{- end -}}
+{{- end -}}
+{{- return (sort $out "Date" "desc") -}}

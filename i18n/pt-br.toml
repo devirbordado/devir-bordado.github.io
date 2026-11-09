@@ -1,0 +1,122 @@
+[skip]
+  other = "Ir para o conteúdo"
+[desc]
+  other = "Laboratório autoral e independente de pesquisa, criação e documentação sobre bordado, memória e transformação."
+[home]
+  other = "Devir Bordado, página inicial"
+[acervo]
+  other = "Acervo"
+[blog]
+  other = "Blog"
+[herb]
+  other = "Herbário"
+[pub]
+  other = "Publicações"
+[sobre]
+  other = "Sobre DB"
+[linhas]
+  other = "Linhas de pesquisa"
+[mais]
+  other = "Mais"
+[down]
+  other = "Downloads"
+[play]
+  other = "Playlists"
+[dig]
+  other = "Digital"
+[secs]
+  other = "Seções"
+[maisop]
+  other = "Mais opções"
+[paginas]
+  other = "Páginas"
+[menu1]
+  other = "Menu de seções"
+[menu2]
+  other = "Menu de páginas"
+[buscar]
+  other = "Buscar"
+[busca_ph]
+  other = "Buscar no site"
+[alt]
+  other = "Vaso de barro com flores ao lado de um banco de madeira com tecidos dobrados"
+[rec]
+  other = "Mais recentes"
+[blogp]
+  other = "Blog"
+[follow]
+  other = "Nos acompanhe"
+[sign]
+  other = "Cadastre-se"
+[sign_p]
+  other = "Receba novidades do Devir Bordado."
+[news_soon]
+  other = "A newsletter chega em breve."
+[email]
+  other = "Seu e-mail"
+[confirm]
+  other = "Confirmar"
+[anti]
+  other = "Verificação antispam (Turnstile)"
+[consent]
+  other = "Ao se cadastrar, você concorda em receber e-mails do Devir Bordado e com a <a href=\"#\">Política de privacidade</a> e os <a href=\"#\">Termos e condições</a>."
+[inst]
+  other = "Institucional"
+[doubts]
+  other = "Dúvidas"
+[contact]
+  other = "Fale conosco"
+[support]
+  other = "Nos apoie"
+[sup_p]
+  other = "Ajude o laboratório a continuar. Qualquer apoio é bem-vindo."
+[legal]
+  other = "© 2026 Iara Lima, Devir Bordado."
+[legal2]
+  other = "Código sob licença MIT; textos e imagens sob CC BY-NC 4.0. Identidade visual (logo, símbolo e marca): todos os direitos reservados."
+[l1]
+  other = "Política de privacidade"
+[l2]
+  other = "Política de cookies"
+[l3]
+  other = "Gerenciar cookies"
+[l4]
+  other = "Termos e condições"
+[l5]
+  other = "Lei de direitos autorais"
+[l6]
+  other = "Lei Geral de Proteção de Dados"
+[blog_intro]
+  other = "O espaço Blog é destinado à composição de textos que permeiam a pesquisa e o fazer. São inquietações que ocorrem durante o período de busca sobre alguma temática, e que levam a novas reflexões que mereciam um local para serem expressas."
+[more_btn]
+  other = "Carregar mais"
+[src_summary]
+  other = "Consultar referências"
+[img_label]
+  other = "Imagem"
+[src_label]
+  other = "Fonte"
+[tags_label]
+  other = "Tags"
+[tax_selo]
+  other = "selos"
+[orig_text]
+  other = "Imagem que originou a capa deste post."
+[orig_link]
+  other = "Visite a página de downloads para aprender como este e outros bordados foram feitos e faça o seu também."
+[comments]
+  other = "Comentários"
+[c_name]
+  other = "Nome"
+[c_last]
+  other = "Sobrenome"
+[c_email]
+  other = "E-mail"
+[c_text]
+  other = "Comentário"
+[c_send]
+  other = "Enviar"
+[c_note]
+  other = "Formulário de demonstração, ainda não conectado."
+[feed_novidades]
+  other = "Novidades"

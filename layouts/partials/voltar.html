@@ -1,0 +1,4 @@
+{{- /* Link "← Seção" para voltar à página principal da seção. Uso: {{ partial "voltar.html" (dict "url" .Parent.RelPermalink "label" (i18n "blog")) }} */ -}}
+{{- $pre := cond (eq site.Language.Lang "en-us") "Back to" "Voltar para" -}}
+<style>.voltar{margin:0 0 1.6rem;font-size:.95rem}.voltar a{text-decoration:none}.voltar a:hover,.voltar a:focus-visible{text-decoration:underline}</style>
+<p class="voltar"><a href="{{ .url }}" aria-label="{{ $pre }} {{ .label }}"><span aria-hidden="true">←</span> {{ .label }}</a></p>

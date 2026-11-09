@@ -1,0 +1,41 @@
+{
+ "cards4": [
+  {
+   "img": "acervo",
+   "key": "acervo",
+   "path": "acervo/"
+  },
+  {
+   "img": "blog",
+   "key": "blog",
+   "path": "blog/"
+  },
+  {
+   "img": "herbario",
+   "key": "herb",
+   "path": "herbario/"
+  },
+  {
+   "img": "publicacoes",
+   "key": "pub",
+   "path": "publicacoes/"
+  }
+ ],
+ "cards3": [
+  {
+   "img": "downloads",
+   "key": "down",
+   "path": "downloads/"
+  },
+  {
+   "img": "playlists",
+   "key": "play",
+   "path": "playlists/"
+  },
+  {
+   "img": "digital",
+   "key": "dig",
+   "path": "digital/"
+  }
+ ]
+}

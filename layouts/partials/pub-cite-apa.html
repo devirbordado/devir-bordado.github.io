@@ -1,0 +1,7 @@
+{{- /* Citação APA 7 gerada dos campos. Aceita o campo "apa" como substituição manual. */ -}}
+{{- if .Params.apa -}}{{- .Params.apa -}}{{- else -}}
+{{- $names := partial "pub-apa-authors.html" .Params.authors -}}
+{{- $full := .Title -}}{{- with .Params.subtitle -}}{{- $full = printf "%s: %s" $.Title . -}}{{- end -}}
+{{- $d := cond (.Params.apa_data_completa | default false) (.Date.Format "2006, January 2") (printf "%d" .Date.Year) -}}
+{{ $names }} ({{ $d }}). {{ $full }}{{ with .Params.apa_versao }} ({{ . }}){{ end }}. {{ with .Params.apa_editora }}{{ . }}. {{ end }}https://doi.org/{{ .Params.doi }}
+{{- end -}}

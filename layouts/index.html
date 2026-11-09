@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ $u := index hugo.Data.ui site.Language.Lang }}
+<h1 class="sr-only">Devir Bordado</h1>
+<section class="hero"><img src="/assets/images/home/banner.webp" alt="{{ i18n "alt" }}" width="1920" height="608"></section>
+<div class="wrap">
+<a class="btn cta" href="{{ index $u.paths "linhas" | relLangURL }}">{{ i18n "linhas" }}</a>
+<div class="cards4">{{ range hugo.Data.home.cards4 }}{{ partial "homecard.html" . }}{{ end }}</div>
+<section aria-labelledby="novidades">
+{{ partial "divider.html" (dict "label" (i18n "rec") "id" "novidades") }}
+<ul class="latest">{{ range first 3 (partial "novidades.html" .) }}<li><small>{{ i18n (cond (eq .Type "blog") "blogp" (cond (eq .Type "herbario") "herb" (cond (eq .Type "acervo") "acervo" "pub"))) }}, {{ .Date | time.Format ":date_long" }}</small><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+</section>
+<div class="cards3">{{ range hugo.Data.home.cards3 }}{{ partial "homecard.html" . }}{{ end }}</div>
+</div>
+{{ end }}

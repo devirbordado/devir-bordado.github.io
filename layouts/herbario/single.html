@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $u := index hugo.Data.ui site.Language.Lang }}
+<link rel="stylesheet" href="/css/herbario.css">
+<div class="wrap"><article>
+{{ partial "divider.html" (dict "label" (i18n "herb") "color" "#77825D" "tag" "p") }}
+{{ partial "voltar.html" (dict "url" .Parent.RelPermalink "label" (i18n "herb")) }}
+<h1 class="ptitle"><em>{{ .Title }}</em>{{ with .Params.autoria }} {{ . }}{{ end }}</h1>
+<figure class="spec"><img src="{{ .Params.img }}" alt="{{ .Params.img_alt }}">
+<div class="etqs">
+<section class="etq"><h2>{{ $u.h_tex }}</h2>
+<p>{{ $u.l_by }}: {{ .Params.bordado_por }}</p><p>{{ $u.l_ano }}: {{ .Params.ano }}</p><p>{{ $u.l_risco }}: {{ .Params.risco }}</p><p>{{ $u.l_pontos }}: {{ .Params.pontos }}</p><p>{{ $u.l_tec }}: {{ .Params.tecido }}, {{ .Params.suporte }}</p><p>{{ $u.l_dim }}: {{ .Params.dimensoes }}</p></section>
+<section class="etq"><h2>Devir Bordado</h2>
+<p>{{ $u.l_fam }} · {{ $u.l_classe }}: {{ .Params.familia }} · {{ .Params.classe }}</p><p>{{ $u.l_sci }}: <em>{{ .Title }}</em></p><p>{{ $u.l_pop }}: {{ .Params.popular }}</p><p>{{ $u.l_etno }}: {{ .Params.etnobotanica }}</p></section>
+</div></figure>
+<p class="cap">{{ .Params.img_caption | markdownify }}</p>
+<section class="notas"><h2>{{ $u.notas }}</h2>
+{{ if .Params.distribuicao }}<dl><dt>{{ $u.l_dist }}</dt><dd>{{ .Params.distribuicao }}</dd><dt>{{ $u.l_obs }}</dt><dd>{{ .Params.observacoes }}</dd></dl>
+{{ else }}<p class="pend">{{ $u.pending }}{{ with .Translations }} <a href="{{ (index . 0).RelPermalink }}">{{ $u.pending_link }}</a>{{ end }}</p>{{ end }}</section>
+{{ with .Params.galeria }}<section class="gal" data-gal><h2>{{ $u.gal }}</h2>
+<div class="car"><button class="nav prev" type="button" aria-label="{{ $u.prev }}">&larr;</button>
+<div class="slides" aria-live="polite">{{ range $i, $g := . }}<figure class="slide"{{ if $i }} hidden{{ end }}><div class="fr"><div class="bgb" style="background-image:url('{{ $g.img }}')"></div><img src="{{ $g.img }}" alt="{{ $u.photo_of }} {{ $.Title }}" loading="lazy"></div><figcaption>{{ $g.caption | markdownify }}</figcaption></figure>{{ end }}</div>
+<button class="nav next" type="button" aria-label="{{ $u.next }}">&rarr;</button></div></section>
+<script src="/js/herbario.js"></script>{{ end }}
+</article></div>
+{{ end }}

@@ -1,0 +1,3 @@
+{{- /* Uma foto dentro de {{< mural >}}. Parâmetros: src, alt, foco (opcional, ex.: "50% 20%") */ -}}
+{{- $src := .Get "src" | default (.Get 0) -}}
+<a class="m-i" href="{{ $src }}"><img src="{{ $src }}" alt="{{ .Get "alt" }}" loading="lazy"{{ with .Get "foco" }} style="object-position:{{ . }}"{{ end }}></a>

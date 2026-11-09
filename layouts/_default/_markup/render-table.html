@@ -1,0 +1,14 @@
+{{- /* Toda tabela em Markdown ganha rolagem lateral no celular. */ -}}
+{{- if not (.Page.Store.Get "css-tab") }}{{ .Page.Store.Set "css-tab" true }}<style>
+.tabela-rolavel{overflow-x:auto;margin:1.4rem 0 1.6rem;-webkit-overflow-scrolling:touch;border:1px solid #DDD1BE;background:linear-gradient(to right,#FDFBF7 30%,rgba(253,251,247,0)) left center/2.2rem 100% no-repeat local,linear-gradient(to left,#FDFBF7 30%,rgba(253,251,247,0)) right center/2.2rem 100% no-repeat local,linear-gradient(to right,rgba(53,50,47,.18),rgba(53,50,47,0)) left center/.7rem 100% no-repeat scroll,linear-gradient(to left,rgba(53,50,47,.18),rgba(53,50,47,0)) right center/.7rem 100% no-repeat scroll}
+.tabela-rolavel:focus-visible{outline:3px solid #74415B;outline-offset:2px}
+.tabela-rolavel table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.95rem;text-align:left;hyphens:none}
+.tabela-rolavel th{background:#F5EFE3;font-weight:600;white-space:nowrap}
+.tabela-rolavel th,.tabela-rolavel td{padding:.55rem .8rem;border-bottom:1px solid #DDD1BE;vertical-align:top}
+.tabela-rolavel tbody tr:last-child td{border-bottom:0}
+</style>{{ end -}}
+<div class="tabela-rolavel" role="region" tabindex="0" aria-label="{{ if hasPrefix site.Language.Lang "en" }}Table, scroll sideways if needed{{ else }}Tabela, deslize para o lado se necessário{{ end }}">
+<table{{ range $k, $v := .Attributes }} {{ $k }}="{{ $v }}"{{ end }}>
+<thead>{{ range .THead }}<tr>{{ range . }}<th{{ with .Alignment }} style="text-align:{{ . }}"{{ end }}>{{ .Text }}</th>{{ end }}</tr>{{ end }}</thead>
+<tbody>{{ range .TBody }}<tr>{{ range . }}<td{{ with .Alignment }} style="text-align:{{ . }}"{{ end }}>{{ .Text }}</td>{{ end }}</tr>{{ end }}</tbody>
+</table></div>

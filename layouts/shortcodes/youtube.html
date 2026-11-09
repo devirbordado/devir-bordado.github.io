@@ -1,0 +1,23 @@
+{{- /* Vídeo do YouTube com clique para carregar (nada é pedido ao Google antes do clique). Uso: {{< youtube id="adw4rUaGeHI" titulo="Nome do vídeo" >}} */ -}}
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- $titulo := .Get "titulo" | default (.Get 1) | default "YouTube" -}}
+{{- $en := hasPrefix site.Language.Lang "en" -}}
+{{- if not (.Page.Store.Get "css-yt") }}{{ .Page.Store.Set "css-yt" true }}<style>
+.yt{margin:2.2rem 0 1.4rem}
+.yt .yt-box{position:relative;aspect-ratio:16/9;background:#35322F;border-radius:12px;overflow:hidden}
+.yt .yt-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt .yt-play{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.9rem;padding:1.2rem;background:linear-gradient(135deg,#35322F,#5A4B3E);color:#FDFBF7;border:0;font:inherit;cursor:pointer;text-align:center}
+.yt .yt-play:hover .yt-ic,.yt .yt-play:focus-visible .yt-ic{background:#FDFBF7;color:#35322F}
+.yt .yt-play:focus-visible{outline:3px solid #DDD1BE;outline-offset:-6px}
+.yt .yt-ic{display:flex;align-items:center;justify-content:center;width:4.2rem;height:4.2rem;border:2px solid #FDFBF7;border-radius:50%;font-size:1.6rem;padding-left:.2rem;transition:background .2s,color .2s}
+.yt .yt-t{font-size:1.1rem;max-width:34rem;line-height:1.3}
+.yt .yt-n{font-size:.8rem;opacity:.8;max-width:30rem;line-height:1.35}
+.yt figcaption{margin:.6rem 0 0;font-size:.85rem;text-align:center}
+</style>{{ end -}}
+{{- if not (.Page.Store.Get "js-yt") }}{{ .Page.Store.Set "js-yt" true }}<script>
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".yt-play");if(!b)return;var f=document.createElement("iframe");
+f.src="https://www.youtube-nocookie.com/embed/"+encodeURIComponent(b.getAttribute("data-id"))+"?autoplay=1&rel=0";f.title=b.getAttribute("data-titulo");f.allow="autoplay; encrypted-media; fullscreen; picture-in-picture";f.allowFullscreen=true;
+b.parentNode.replaceChild(f,b);f.focus();});
+</script>{{ end -}}
+<figure class="yt"><div class="yt-box"><button class="yt-play" type="button" data-id="{{ $id }}" data-titulo="{{ $titulo }}" aria-label="{{ if $en }}Play video{{ else }}Reproduzir vídeo{{ end }}: {{ $titulo }}"><span class="yt-ic" aria-hidden="true">▶</span><span class="yt-t">{{ $titulo }}</span><span class="yt-n">{{ if $en }}When you play, the video loads from YouTube (Google), which may set its own cookies.{{ else }}Ao reproduzir, o vídeo é carregado do YouTube (Google), que pode usar seus próprios cookies.{{ end }}</span></button></div>
+<noscript><figcaption><a href="https://www.youtube.com/watch?v={{ $id }}" rel="noopener">{{ if $en }}Watch on YouTube{{ else }}Assistir no YouTube{{ end }}: {{ $titulo }}</a></figcaption></noscript></figure>

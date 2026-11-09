@@ -1,0 +1,7 @@
+{{ define "main" }}
+<div class="wrap">
+{{ partial "divider.html" (dict "label" (i18n "blog") "color" "#7D443A" "tag" "h1") }}
+<div class="pagehead"><p>{{ i18n "blog_intro" }}</p></div>
+{{ partial "bgrid.html" .Pages }}
+</div>
+{{ end }}

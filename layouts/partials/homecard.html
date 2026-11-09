@@ -1,0 +1,1 @@
+{{ $u := index hugo.Data.ui site.Language.Lang }}<a class="card" data-s="{{ .key }}" href="{{ with index $u.paths .key }}{{ . | relLangURL }}{{ else }}#{{ end }}"><img src="/assets/images/home/{{ .img }}.webp" alt="" loading="lazy"><span class="nm">{{ i18n .key }}</span></a>

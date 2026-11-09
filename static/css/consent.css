@@ -1,0 +1,22 @@
+/* Aviso de cookies — Devir Bordado */
+.consent { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: #F5EFE3; color: #35322F; border-top: 1px solid #B8A893; box-shadow: 0 -6px 18px rgba(53, 50, 47, .08); padding-bottom: env(safe-area-inset-bottom); }
+.consent[hidden] { display: none; }
+.consent-in { max-width: 1180px; margin: 0 auto; padding: 1.1rem 1.25rem; display: flex; align-items: center; gap: 1.5rem 2.5rem; }
+.consent-txt { flex: 1; min-width: 0; }
+.consent h2 { margin: 0 0 .25rem; font-size: 1rem; font-weight: 600; outline: none; }
+.consent p { margin: 0; font-size: .92rem; line-height: 1.55; }
+.consent a { color: #74415B; }
+.consent a:hover, .consent a:focus-visible { color: #951822; }
+.consent-btns { display: flex; gap: .75rem; flex: none; }
+/* os dois botões têm o mesmo peso visual */
+.consent-btn { padding: .6rem 1.2rem; font: inherit; font-size: .95rem; color: #74415B; background: transparent; border: 2px solid #74415B; border-radius: 3px; cursor: pointer; }
+.consent-btn:hover, .consent-btn:focus-visible, .consent-btn:active { color: #FDFBF7; background: #951822; border-color: #951822; }
+.consent-open { font: inherit; color: #74415B; background: transparent; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+.consent-open:hover, .consent-open:focus-visible { color: #951822; }
+@media (max-width: 720px) {
+  .consent-in { flex-direction: column; align-items: stretch; gap: .9rem; padding: 1rem 1rem; }
+  .consent-btns > * { flex: 1; }
+}
+
+/* utilitário global (texto só para leitores de tela) */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }

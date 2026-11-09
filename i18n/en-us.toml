@@ -1,0 +1,122 @@
+[skip]
+  other = "Skip to content"
+[desc]
+  other = "An independent, author-led laboratory for research, creation and documentation on embroidery, memory and transformation."
+[home]
+  other = "Devir Bordado, home page"
+[acervo]
+  other = "Collection"
+[blog]
+  other = "Blog"
+[herb]
+  other = "Herbarium"
+[pub]
+  other = "Publications"
+[sobre]
+  other = "About DB"
+[linhas]
+  other = "Research lines"
+[mais]
+  other = "More"
+[down]
+  other = "Downloads"
+[play]
+  other = "Playlists"
+[dig]
+  other = "Digital"
+[secs]
+  other = "Sections"
+[maisop]
+  other = "More options"
+[paginas]
+  other = "Pages"
+[menu1]
+  other = "Sections menu"
+[menu2]
+  other = "Pages menu"
+[buscar]
+  other = "Search"
+[busca_ph]
+  other = "Search the site"
+[alt]
+  other = "Clay vase with flowers beside a wooden bench with draped fabrics"
+[rec]
+  other = "Latest"
+[blogp]
+  other = "Blog"
+[follow]
+  other = "Follow us"
+[sign]
+  other = "Sign up"
+[sign_p]
+  other = "Get news from Devir Bordado."
+[news_soon]
+  other = "The newsletter is coming soon."
+[email]
+  other = "Your email"
+[confirm]
+  other = "Confirm"
+[anti]
+  other = "Anti-spam verification (Turnstile)"
+[consent]
+  other = "By signing up, you agree to receive emails from Devir Bordado and to the <a href=\"#\">Privacy policy</a> and the <a href=\"#\">Terms and conditions</a>."
+[inst]
+  other = "Institutional"
+[doubts]
+  other = "Questions"
+[contact]
+  other = "Contact us"
+[support]
+  other = "Support us"
+[sup_p]
+  other = "Help the lab keep going. Any support is welcome."
+[legal]
+  other = "© 2026 Iara Lima, Devir Bordado."
+[legal2]
+  other = "Code under the MIT license; texts and images under CC BY-NC 4.0. Visual identity (logo, symbol and brand): all rights reserved."
+[l1]
+  other = "Privacy policy"
+[l2]
+  other = "Cookie policy"
+[l3]
+  other = "Manage cookies"
+[l4]
+  other = "Terms and conditions"
+[l5]
+  other = "Copyright law"
+[l6]
+  other = "Brazilian General Data Protection Law (LGPD)"
+[blog_intro]
+  other = "The Blog section is intended for the creation of texts that explore the processes of research and practice. It captures the questions and concerns that arise while investigating a given topic—insights that spark new reflections and deserve a space where they can be expressed."
+[more_btn]
+  other = "Load more"
+[src_summary]
+  other = "View references"
+[img_label]
+  other = "Image"
+[src_label]
+  other = "Source"
+[tags_label]
+  other = "Tags"
+[tax_selo]
+  other = "seals"
+[orig_text]
+  other = "Image that originated this post's cover."
+[orig_link]
+  other = "Visit the downloads page to learn how this and other embroideries were made, and make your own."
+[comments]
+  other = "Comments"
+[c_name]
+  other = "First name"
+[c_last]
+  other = "Last name"
+[c_email]
+  other = "Email"
+[c_text]
+  other = "Comment"
+[c_send]
+  other = "Send"
+[c_note]
+  other = "Demo form, not connected yet."
+[feed_novidades]
+  other = "News"

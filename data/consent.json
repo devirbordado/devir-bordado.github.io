@@ -1,0 +1,21 @@
+{
+  "ga_id": "G-MRJ64TZNZ8",
+  "pt-br": {
+    "title": "Cookies e estatísticas",
+    "text": "Usamos o Google Analytics apenas para entender, de forma agregada, como o site é visitado, e somente se você permitir. Não usamos cookies de publicidade nem de remarketing. Se recusar, o site funciona do mesmo jeito e nenhum dado é enviado ao Google.",
+    "accept": "Permitir estatísticas",
+    "reject": "Recusar",
+    "more": "Saiba mais",
+    "more_url": "/pt-br/politica-de-cookies/",
+    "manage": "Gerenciar cookies"
+  },
+  "en-us": {
+    "title": "Cookies and statistics",
+    "text": "We use Google Analytics only to understand, in aggregate, how the site is visited, and only if you allow it. We do not use advertising or remarketing cookies. If you decline, the site works the same way and no data is sent to Google.",
+    "accept": "Allow statistics",
+    "reject": "Decline",
+    "more": "Learn more",
+    "more_url": "/en-us/cookie-policy/",
+    "manage": "Manage cookies"
+  }
+}

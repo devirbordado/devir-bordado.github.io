@@ -1,0 +1,7 @@
+.acard .cv{display:block;aspect-ratio:1}
+.acard .cv img{width:100%;height:100%;object-fit:cover}
+.acard .tx{padding:1rem 1.1rem 1.3rem}
+.acard .tx p{margin:0;font-size:.9rem}
+.acard .tx h2{font-size:1.3rem;line-height:1.25;margin:.15rem 0 0;font-weight:500}
+.acv-txt{margin-top:2rem}
+.acv-txt p a,.acv-txt p a:visited{text-decoration:underline}

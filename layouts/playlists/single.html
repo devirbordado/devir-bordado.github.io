@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{- $en := hasPrefix site.Language.Lang "en" -}}
+<link rel="stylesheet" href="/css/digital.css">
+<style>
+.pl .sp-box{position:relative;height:352px;background:#35322F;border-radius:12px;overflow:hidden}
+.pl .sp-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pl .sp-play{position:absolute;inset:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.9rem;padding:1.2rem;background:linear-gradient(135deg,#35322F,#5E2751);color:#FDFBF7;border:0;font:inherit;cursor:pointer;text-align:center}
+.pl .sp-play:hover .sp-ic,.pl .sp-play:focus-visible .sp-ic{background:#FDFBF7;color:#35322F}
+.pl .sp-play:focus-visible{outline:3px solid #DDD1BE;outline-offset:-6px}
+.pl .sp-ic{display:flex;align-items:center;justify-content:center;width:4.2rem;height:4.2rem;border:2px solid #FDFBF7;border-radius:50%;font-size:1.6rem;padding-left:.2rem;transition:background .2s,color .2s}
+.pl .sp-t{font-size:1.1rem;max-width:34rem;line-height:1.3}
+.pl .sp-n{font-size:.8rem;opacity:.85;max-width:30rem;line-height:1.35}
+.pl .sp-alt{margin:.6rem 0 0;font-size:.85rem;text-align:center}
+</style>
+<script>
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".sp-play");if(!b)return;var f=document.createElement("iframe");
+f.src="https://open.spotify.com/embed/playlist/"+encodeURIComponent(b.getAttribute("data-id"))+"?utm_source=generator&si="+encodeURIComponent(b.getAttribute("data-si")||"");
+f.title=b.getAttribute("data-titulo");f.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";f.allowFullscreen=true;
+b.parentNode.replaceChild(f,b);f.focus();});
+</script>
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#5E2751" "tag" "h1") }}
+<div class="pagehead">{{ .Content }}</div>
+{{ range .Params.playlists }}<section class="pl"><p>{{ .texto }}</p>
+<div class="sp-box"><button class="sp-play" type="button" data-id="{{ .id }}" data-si="{{ .si }}" data-titulo="{{ .titulo }}" aria-label="{{ if $en }}Load playlist{{ else }}Carregar playlist{{ end }}: {{ .titulo }}"><span class="sp-ic" aria-hidden="true">▶</span><span class="sp-t">{{ .titulo }}</span><span class="sp-n">{{ if $en }}When you load it, the player comes from Spotify, which may set its own cookies and receive your IP address.{{ else }}Ao carregar, o player vem do Spotify, que pode usar seus próprios cookies e receber seu endereço IP.{{ end }}</span></button></div>
+<noscript><p class="sp-alt"><a href="https://open.spotify.com/playlist/{{ .id }}" rel="noopener">{{ if $en }}Open on Spotify{{ else }}Abrir no Spotify{{ end }}: {{ .titulo }}</a></p></noscript></section>{{ end }}
+</div>
+{{ end }}

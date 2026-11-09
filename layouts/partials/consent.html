@@ -1,0 +1,16 @@
+{{- /* Aviso de cookies + Google Analytics condicionado ao consentimento. Incluir antes de <script src="/js/site.js"> no baseof.html. */ -}}
+{{- $c := index hugo.Data.consent site.Language.Lang -}}
+<link rel="stylesheet" href="{{ "css/consent.css" | relURL }}">
+<section id="db-consent" class="consent" role="region" aria-labelledby="db-consent-t" data-cfg='{{ dict "id" hugo.Data.consent.ga_id | jsonify }}' hidden>
+  <div class="consent-in">
+    <div class="consent-txt">
+      <h2 id="db-consent-t" tabindex="-1">{{ $c.title }}</h2>
+      <p>{{ $c.text }} <a href="{{ $c.more_url | relURL }}">{{ $c.more }}</a></p>
+    </div>
+    <div class="consent-btns">
+      <button type="button" class="consent-btn" data-accept>{{ $c.accept }}</button>
+      <button type="button" class="consent-btn" data-reject>{{ $c.reject }}</button>
+    </div>
+  </div>
+</section>
+<script src="{{ "js/consent.js" | relURL }}" defer></script>

@@ -1,0 +1,144 @@
+{
+ "pt-br": {
+  "kofi": "Apoie o Lab no Ko-fi",
+  "updated": "Atualizado em",
+  "version": "Versão",
+  "consent": "Ao se cadastrar, você concorda em receber e-mails do Devir Bordado e com a <a href=\"/pt-br/politica-de-privacidade/\">Política de privacidade</a> e os <a href=\"/pt-br/termos-e-condicoes/\">Termos e condições</a>.",
+  "links": [
+   {
+    "label": "Política de privacidade",
+    "href": "/pt-br/politica-de-privacidade/"
+   },
+   {
+    "label": "Política de cookies",
+    "href": "/pt-br/politica-de-cookies/"
+   },
+   {
+    "label": "Gerenciar cookies",
+    "href": "/pt-br/politica-de-cookies/#2-como-gerenciar-seu-consentimento",
+    "cookies": true
+   },
+   {
+    "label": "Termos e condições",
+    "href": "/pt-br/termos-e-condicoes/"
+   },
+   {
+    "label": "Lei de Direitos Autorais",
+    "href": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+    "ext": true
+   },
+   {
+    "label": "Lei Geral de Proteção de Dados",
+    "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "ext": true
+   }
+  ],
+  "paths": {
+   "blog": "blog/",
+   "herb": "herbario/",
+   "acervo": "acervo/",
+   "play": "playlists/",
+   "dig": "digital/",
+   "down": "downloads/",
+   "pub": "publicacoes/",
+   "sobre": "sobre-db/",
+   "linhas": "linhas-de-pesquisa/",
+   "busca": "busca/"
+  },
+  "l_fam": "Família",
+  "l_classe": "Classe",
+  "l_sci": "Nome científico",
+  "l_pop": "Nomes populares",
+  "l_etno": "Etnobotânica",
+  "h_tex": "Dados têxteis",
+  "l_by": "Bordado por",
+  "l_ano": "Ano do bordado",
+  "l_risco": "Risco criado por",
+  "l_pontos": "Pontos usados",
+  "l_tec": "Tecido e suporte",
+  "l_dim": "Dimensões",
+  "notas": "Notas botânicas",
+  "l_dist": "Distribuição natural",
+  "l_obs": "Observações botânicas",
+  "gal": "Galeria de coleta imagética",
+  "prev": "Foto anterior",
+  "next": "Próxima foto",
+  "photo_of": "Fotografia de",
+  "pending": "Esta informação ainda não foi traduzida.",
+  "pending_link": "Ver em português",
+  "l_colecao": "Coleção",
+  "l_ano_c": "Ano de criação",
+  "l_nota": "Nota"
+ },
+ "en-us": {
+  "kofi": "Support the Lab on Ko-fi",
+  "updated": "Updated on",
+  "version": "Version",
+  "consent": "By signing up, you agree to receive emails from Devir Bordado and to the <a href=\"/en-us/privacy-policy/\">Privacy policy</a> and the <a href=\"/en-us/terms-and-conditions/\">Terms and conditions</a>.",
+  "links": [
+   {
+    "label": "Privacy policy",
+    "href": "/en-us/privacy-policy/"
+   },
+   {
+    "label": "Cookie policy",
+    "href": "/en-us/cookie-policy/"
+   },
+   {
+    "label": "Manage cookies",
+    "href": "/en-us/cookie-policy/#2-how-to-manage-your-consent",
+    "cookies": true
+   },
+   {
+    "label": "Terms and conditions",
+    "href": "/en-us/terms-and-conditions/"
+   },
+   {
+    "label": "Brazilian Copyright Law (in Portuguese)",
+    "href": "https://www.planalto.gov.br/ccivil_03/leis/l9610.htm",
+    "ext": true
+   },
+   {
+    "label": "Brazilian General Data Protection Law, LGPD (in Portuguese)",
+    "href": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "ext": true
+   }
+  ],
+  "paths": {
+   "blog": "blog/",
+   "herb": "herbarium/",
+   "acervo": "collection/",
+   "play": "playlists/",
+   "dig": "digital/",
+   "down": "downloads/",
+   "pub": "publications/",
+   "sobre": "about-db/",
+   "linhas": "research-lines/",
+   "busca": "search/"
+  },
+  "l_fam": "Family",
+  "l_classe": "Class",
+  "l_sci": "Scientific name",
+  "l_pop": "Popular names (Portuguese)",
+  "l_etno": "Ethnobotany",
+  "h_tex": "Textile data",
+  "l_by": "Embroidered by",
+  "l_ano": "Year",
+  "l_risco": "Pattern drawn by",
+  "l_pontos": "Stitches used",
+  "l_tec": "Fabric and support",
+  "l_dim": "Dimensions",
+  "notas": "Botanical notes",
+  "l_dist": "Natural distribution",
+  "l_obs": "Botanical observations",
+  "gal": "Field photo gallery",
+  "prev": "Previous photo",
+  "next": "Next photo",
+  "photo_of": "Photograph of",
+  "pending": "This information has not been translated yet.",
+  "pending_link": "View in Portuguese",
+  "l_colecao": "Collection",
+  "l_ano_c": "Year of creation",
+  "l_nota": "Note"
+ }
+}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $u := index hugo.Data.ui site.Language.Lang }}
+<link rel="stylesheet" href="/css/herbario.css"><link rel="stylesheet" href="/css/acervo.css">
+<div class="wrap"><article>
+{{ partial "divider.html" (dict "label" (i18n "acervo") "color" "#996515" "tag" "p") }}
+{{ partial "voltar.html" (dict "url" .Parent.RelPermalink "label" (i18n "acervo")) }}
+<h1 class="ptitle">{{ .Title }}</h1>
+<section class="gal" data-gal>
+<div class="car"><button class="nav prev" type="button" aria-label="{{ $u.prev }}">&larr;</button>
+<div class="slides" aria-live="polite">{{ range $i, $g := .Params.galeria }}<figure class="slide"{{ if $i }} hidden{{ end }}><div class="fr"><div class="bgb" style="background-image:url('{{ $g.img }}')"></div><img src="{{ $g.img }}" alt="" loading="lazy"></div><figcaption>{{ $g.caption | markdownify }}</figcaption></figure>{{ end }}</div>
+<button class="nav next" type="button" aria-label="{{ $u.next }}">&rarr;</button></div></section>
+<div class="acv-txt prose">{{ .Content }}
+<p><strong>{{ $u.l_ano_c }}:</strong> {{ .Params.ano }}</p>
+{{ with .Params.nota }}<p><strong>{{ $u.l_nota }}:</strong> {{ . | markdownify }}</p>{{ end }}</div>
+<script src="/js/herbario.js"></script>
+</article></div>
+{{ end }}

@@ -1,0 +1,37 @@
+/* ===== Regra geral de links =====
+   Todo link é sublinhado, em qualquer página, para que não dependa só da cor
+   (o roxo #74415B tem pouco contraste com o carvão do texto).
+   O !important vale de propósito: esta regra vence qualquer
+   "text-decoration: none" antigo espalhado pelos outros arquivos de estilo.
+   O :where() deixa a regra com "peso zero", assim as exceções abaixo
+   (que são mais específicas) sempre vencem.
+   Para tirar o sublinhado de um tipo de link em todo o site, acrescente a
+   classe dele na lista de exceções (os :not). */
+:where(a:not(.logo):not(.card):not(.btn):not(.cta):not(.pub-btn):not(.selo):not(.skip)) {
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+:where(a:not(.logo):not(.card):not(.btn):not(.cta):not(.pub-btn):not(.selo):not(.skip)):hover,
+:where(a:not(.logo):not(.card):not(.btn):not(.cta):not(.pub-btn):not(.selo):not(.skip)):focus-visible {
+  text-decoration-thickness: 2px;
+}
+/* O sublinhado não é necessário em links que são só imagem */
+a:has(> img:only-child) { text-decoration: none !important; }
+
+/* ===== Exceção: cabeçalho e rodapé (em todas as páginas) =====
+   Menu, rodapé e painéis do menu no celular ficam sem sublinhado, sempre
+   do mesmo jeito. O sublinhado aparece ao passar o mouse (ou ao navegar
+   com o teclado). A única exceção é a faixa de idiomas, no topo. */
+header a, footer a { text-decoration: none !important; }
+header a:hover, header a:focus-visible,
+footer a:hover, footer a:focus-visible { text-decoration: underline !important; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.langbar a { text-decoration: underline !important; }
+
+/* ===== Exceção: página inicial =====
+   Na Home (a única página com a faixa .hero) os links do conteúdo
+   também ficam sem sublinhado, e aparecem só ao passar o mouse. */
+body:has(.hero) a { text-decoration: none !important; }
+body:has(.hero) a:hover,
+body:has(.hero) a:focus-visible { text-decoration: underline !important; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+body:has(.hero) .langbar a { text-decoration: underline !important; }

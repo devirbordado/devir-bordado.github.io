@@ -1,0 +1,9 @@
+{
+  "by":        {"name": "CC BY 4.0",        "path": "by/4.0"},
+  "by-sa":     {"name": "CC BY-SA 4.0",     "path": "by-sa/4.0"},
+  "by-nc":     {"name": "CC BY-NC 4.0",     "path": "by-nc/4.0"},
+  "by-nd":     {"name": "CC BY-ND 4.0",     "path": "by-nd/4.0"},
+  "by-nc-sa":  {"name": "CC BY-NC-SA 4.0",  "path": "by-nc-sa/4.0"},
+  "by-nc-nd":  {"name": "CC BY-NC-ND 4.0",  "path": "by-nc-nd/4.0"},
+  "cc-zero":   {"name": "CC0 1.0",          "path": "zero/1.0"}
+}

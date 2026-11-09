@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $p := index hugo.Data.pub site.Language.Lang }}
+{{ $s := $p.search }}
+<link rel="stylesheet" href="{{ "css/paginas.css" | relURL }}">
+<div class="wrap pg pg-busca" data-more="{{ $s.more }}" data-um="{{ $s.one }}" data-many="{{ $s.many }}" data-hint="{{ $s.hint }}">
+  <h1 class="sr-only">{{ .Title }}</h1>
+
+  <form class="busca-form" role="search" action="" method="get">
+    <label class="sr-only" for="busca-q">{{ $s.label }}</label>
+    <input id="busca-q" name="q" type="search" placeholder="{{ $s.placeholder }}" autocomplete="off" autofocus>
+    <button type="submit">{{ $s.button }}</button>
+  </form>
+
+  {{ partial "divider.html" (dict "label" "" "color" "#35322F" "tag" "p") }}
+
+  <p class="busca-status" role="status" aria-live="polite"></p>
+  <div class="busca-grid" data-resultados></div>
+  <p class="busca-mais" hidden><button type="button" class="pub-btn" data-mais>{{ $s.more }}</button></p>
+
+  {{ partial "fio-erro.html" (dict "p" $p "kind" "sem-resultado" "hidden" true) }}
+</div>
+
+{{- /* Índice de busca deste idioma, embutido na página (não precisa de arquivo nem de configuração extra). */ -}}
+{{ $skip := slice "title" "subtitle" "date" "lastmod" "publishdate" "slug" "type" "layout" "url" "weight" "translationkey" "draft" "cascade" "lines" "authors" }}
+{{ $idx := slice }}
+{{ range site.RegularPages }}
+  {{ if and (ne .Type "busca") (not .Params.sem_busca) }}
+    {{ $pg := . }}
+    {{ $label := $p.pages_label }}{{ if .Section }}{{ $label = (index $p.sections .Section) | default .CurrentSection.Title }}{{ end }}
+    {{ $tax := slice }}
+    {{ range (slice "tags" "selos" "seals" "palavras_chave") }}{{ range index $pg.Params . }}{{ $tax = $tax | append . }}{{ end }}{{ end }}
+    {{ $meta := slice }}
+    {{ range $k, $v := .Params }}
+      {{ if and (eq (printf "%T" $v) "string") (not (in $skip $k)) (not (findRE "(?i)img|image|imagem|capa|foto|thumb|src|file|path|alt" $k)) (lt (len $v) 300) (not (hasPrefix $v "/")) (not (hasPrefix $v "http")) }}{{ $meta = $meta | append $v }}{{ end }}
+    {{ end }}
+    {{ $text := .Plain | replaceRE `\s+` " " | truncate 1400 }}
+    {{ $idx = $idx | append (dict "t" .Title "st" (.Params.subtitle | default "") "s" $label "k" .Section "u" .RelPermalink "d" (.Description | default "") "g" (delimit $tax " ") "m" (delimit $meta " ") "x" $text "dt" (.Date.Format "2006-01-02")) }}
+  {{ end }}
+{{ end }}
+<script type="application/json" id="busca-dados">{{ $idx | jsonify | safeJS }}</script>
+<script type="application/json" id="busca-cores">{{ $p.colors | jsonify | safeJS }}</script>
+<script type="application/json" id="busca-msgs">{{ $p.err.msgs | jsonify | safeJS }}</script>
+<script src="{{ "js/busca.js" | relURL }}" defer></script>
+{{ end }}

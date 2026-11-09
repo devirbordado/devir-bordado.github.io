@@ -1,0 +1,198 @@
+{
+  "pt-br": {
+    "kinds": [
+      {
+        "id": "artigos",
+        "label": "Artigos"
+      },
+      {
+        "id": "ensaios",
+        "label": "Ensaios"
+      },
+      {
+        "id": "preprints",
+        "label": "Preprints"
+      },
+      {
+        "id": "conferencias",
+        "label": "Conferências"
+      },
+      {
+        "id": "teses",
+        "label": "Teses"
+      },
+      {
+        "id": "institucionais",
+        "label": "Institucionais"
+      }
+    ],
+    "empty": "Nenhum registro por enquanto.",
+    "and": "e",
+    "authorship": "Autoria",
+    "date": "Data de publicação",
+    "date_fmt": "02/01/2006",
+    "doi": "DOI",
+    "orcid": "ORCID",
+    "lattes": "Lattes",
+    "abstract": "Resumo",
+    "keywords": "Palavras-chave",
+    "languages": "Idioma do documento",
+    "langs": {
+      "pt": "Português",
+      "en": "Inglês"
+    },
+    "roles": {
+      "orientadora": "Orientadora",
+      "orientador": "Orientador"
+    },
+    "access": "Acessar o documento na íntegra",
+    "access_at": "Abre em",
+    "cite": "Como citar",
+    "cite_note": "A data de acesso é atualizada automaticamente.",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "license_pre": "Este trabalho está licenciado sob",
+    "license_none": "Licença não identificada",
+    "deed": "pt-br",
+    "back": "Publicações",
+    "pages_label": "Páginas",
+    "search": {
+      "title": "Busca",
+      "label": "Buscar no laboratório",
+      "placeholder": "Buscar no laboratório",
+      "button": "Buscar",
+      "hint": "Escreva um termo para buscar em todo o site.",
+      "one": "1 resultado para",
+      "many": "resultados para",
+      "more": "Mostrar mais",
+      "loading": "Carregando…"
+    },
+    "err": {
+      "main": "O fio não encontrou onde continuar",
+      "home": "Voltar ao início",
+      "search": "Buscar no site",
+      "msgs": {
+        "nao-encontrada": "A página que você procurou não está neste endereço. Ela pode ter mudado de lugar ou nunca ter existido.",
+        "secao": "Esta seção existe, mas não encontramos esta página dentro dela.",
+        "sem-conteudo": "Este espaço ainda não tem conteúdo associado. O fio continua sendo tecido.",
+        "sem-resultado": "Nenhum resultado para “{q}”. Tente outra palavra ou uma forma mais curta do termo.",
+        "indisponivel": "Não foi possível carregar o índice de busca. Tente novamente em instantes."
+      }
+    },
+    "colors": {
+      "blog": "#7D443A",
+      "herbario": "#77825D",
+      "acervo": "#996515",
+      "publicacoes": "#556A82",
+      "digital": "#5E2751",
+      "playlists": "#5E2751",
+      "downloads": "#5E2751",
+      "linhas-de-pesquisa": "#667C9B",
+      "sobre-db": "#5A4B3E"
+    },
+    "sections": {
+      "blog": "Blog",
+      "herbario": "Herbário",
+      "acervo": "Acervo",
+      "publicacoes": "Publicações"
+    }
+  },
+  "en-us": {
+    "kinds": [
+      {
+        "id": "artigos",
+        "label": "Articles"
+      },
+      {
+        "id": "ensaios",
+        "label": "Essays"
+      },
+      {
+        "id": "preprints",
+        "label": "Preprints"
+      },
+      {
+        "id": "conferencias",
+        "label": "Conferences"
+      },
+      {
+        "id": "teses",
+        "label": "Theses"
+      },
+      {
+        "id": "institucionais",
+        "label": "Institutional"
+      }
+    ],
+    "empty": "No records yet.",
+    "and": "and",
+    "authorship": "Authors",
+    "date": "Publication date",
+    "date_fmt": "Jan 2, 2006",
+    "doi": "DOI",
+    "orcid": "ORCID",
+    "lattes": "Lattes",
+    "abstract": "Abstract",
+    "keywords": "Keywords",
+    "languages": "Document language",
+    "langs": {
+      "pt": "Portuguese",
+      "en": "English"
+    },
+    "roles": {
+      "orientadora": "Advisor",
+      "orientador": "Advisor"
+    },
+    "access": "Access the full document",
+    "access_at": "Opens on",
+    "cite": "How to cite",
+    "cite_note": "The access date is updated automatically.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "license_pre": "This work is licensed under",
+    "license_none": "License not identified",
+    "deed": "en",
+    "back": "Publications",
+    "pages_label": "Pages",
+    "search": {
+      "title": "Search",
+      "label": "Search the lab",
+      "placeholder": "Search the lab",
+      "button": "Search",
+      "hint": "Type a term to search the whole site.",
+      "one": "1 result for",
+      "many": "results for",
+      "more": "Show more",
+      "loading": "Loading…"
+    },
+    "err": {
+      "main": "The thread did not find where to continue",
+      "home": "Back to the start",
+      "search": "Search the site",
+      "msgs": {
+        "nao-encontrada": "The page you looked for is not at this address. It may have moved, or may never have existed.",
+        "secao": "This section exists, but we could not find this page within it.",
+        "sem-conteudo": "This space has no associated content yet. The thread is still being woven.",
+        "sem-resultado": "No results for “{q}”. Try another word or a shorter form of the term.",
+        "indisponivel": "The search index could not be loaded. Please try again in a moment."
+      }
+    },
+    "colors": {
+      "blog": "#7D443A",
+      "herbarium": "#77825D",
+      "collection": "#996515",
+      "publications": "#556A82",
+      "digital": "#5E2751",
+      "playlists": "#5E2751",
+      "downloads": "#5E2751",
+      "research-lines": "#667C9B",
+      "about-db": "#5A4B3E"
+    },
+    "sections": {
+      "blog": "Blog",
+      "herbarium": "Herbarium",
+      "collection": "Collection",
+      "publications": "Publications"
+    }
+  }
+}

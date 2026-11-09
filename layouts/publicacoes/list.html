@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ $p := index hugo.Data.pub site.Language.Lang }}
+<link rel="stylesheet" href="{{ "css/paginas.css" | relURL }}">
+<div class="wrap pg pg-pub">
+  {{ partial "divider.html" (dict "label" .Title "color" "#556A82" "tag" "h1") }}
+
+  <div class="pub-intro">{{ .Content }}</div>
+
+  {{ $pages := .RegularPages }}
+  {{ range $p.kinds }}
+    {{ $k := .id }}
+    {{ $items := sort (where $pages "Params.tipo" $k) "Date" "desc" }}
+    <section class="pub-sec" aria-labelledby="pub-{{ $k }}">
+      <h2 class="pub-rule" id="pub-{{ $k }}"><span>{{ .label }}</span></h2>
+      {{ if $items }}
+        {{ range $items }}
+          {{ $a := partial "pub-split.html" .Params.authors }}
+          <article class="pub-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.subtitle }}<span class="pub-sub">: {{ . }}</span>{{ end }}</h3>
+            <p class="pub-meta">{{ $p.authorship }}: {{ partial "pub-names.html" (dict "list" $a.main "and" $p.and) }}</p>
+            <p class="pub-meta">{{ $p.date }}: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $p.date_fmt }}</time></p>
+          </article>
+        {{ end }}
+      {{ else }}
+        <p class="pub-empty">{{ $p.empty }}</p>
+      {{ end }}
+    </section>
+  {{ end }}
+</div>
+<script src="{{ "js/paginas.js" | relURL }}" defer></script>
+{{ end }}

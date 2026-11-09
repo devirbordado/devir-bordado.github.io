@@ -1,0 +1,5 @@
+{{ $p := .p }}<article class="bcard"{{ if .hide }} hidden{{ end }}>
+<div class="cv"{{ if not $p.Params.cover }} style="background:#F5EFE3"{{ end }}><a href="{{ $p.RelPermalink }}" tabindex="-1" aria-hidden="true"{{ if not $p.Params.cover }} style="display:block;width:100%;height:100%"{{ end }}>{{ with $p.Params.cover }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}</a>{{ range $p.GetTerms (i18n "tax_selo") }}<a class="selo" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</div>
+<div class="tx"><h2><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></h2><small>{{ $p.Date | time.Format ":date_long" }}</small>
+{{ $t := trim (replaceRE "\\s+" " " ($p.Plain | htmlUnescape)) " " }}{{ $w := split $t " " }}<p>{{ if gt (len $w) 25 }}{{ delimit (first 25 $w) " " }}…{{ else }}{{ $t }}{{ end }}</p></div>
+</article>

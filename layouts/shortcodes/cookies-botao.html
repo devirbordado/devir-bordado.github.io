@@ -1,0 +1,3 @@
+{{- /* Uso nas páginas legais: {{< cookies-botao >}} — reabre a escolha de cookies. */ -}}
+{{- $c := index hugo.Data.consent site.Language.Lang -}}
+<button type="button" class="consent-open" data-cookies>{{ $c.manage }}</button>

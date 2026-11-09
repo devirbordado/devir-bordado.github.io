@@ -1,0 +1,9 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/herbario.css">
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#77825D" "tag" "h1") }}
+<div class="pagehead"><p>{{ .Description }}</p></div>
+<div class="bgrid hgrid" id="bgrid">{{ range $i, $p := .Pages.ByTitle }}{{ partial "hcard.html" (dict "p" $p "hide" (ge $i 9)) }}{{ end }}</div>
+{{ if gt (len .Pages) 9 }}<button class="btn more" data-more="#bgrid" data-step="9" type="button">{{ i18n "more_btn" }}</button>{{ end }}
+</div>
+{{ end }}

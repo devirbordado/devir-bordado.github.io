@@ -1,0 +1,1 @@
+{{ $t := .tag | default "h2" }}<div class="divider" style="--c:{{ .color | default "#35322F" }}">{{ if eq $t "h1" }}<h1>{{ .label }}</h1>{{ else if eq $t "p" }}<p>{{ .label }}</p>{{ else }}<h2{{ with .id }} id="{{ . }}"{{ end }}>{{ .label }}</h2>{{ end }}</div>

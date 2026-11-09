@@ -1,0 +1,2 @@
+<div class="bgrid" id="bgrid">{{ range $i, $p := . }}{{ partial "bcard.html" (dict "p" $p "hide" (ge $i 9)) }}{{ end }}</div>
+{{ if gt (len .) 9 }}<button class="btn more" data-more="#bgrid" data-step="9" type="button">{{ i18n "more_btn" }}</button>{{ end }}
