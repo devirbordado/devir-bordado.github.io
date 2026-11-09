@@ -1,19 +1,26 @@
 cff-version: 1.2.0
 message: "Se você usar este material, cite-o como abaixo. / If you use this material, please cite it as below."
-title: "Devir Bordado"
+title: "Devir Bordado: Laboratório de Pesquisa Independente"
 type: software
 version: "1.0.0"
-date-released: "2026-11-07"
+doi: "10.5281/zenodo.24094716"
+date-released: "2026-11-09"
 authors:
   - family-names: "Lima"
     given-names: "Iara"
+    affiliation: "Devir Bordado"
 repository-code: "https://github.com/devirbordado/devir-bordado.github.io"
 url: "https://devirbordado.space"
 license: MIT
 abstract: "Laboratório autoral de pesquisa criativa sobre o bordado como prática de memória, conhecimento e transformação. Código sob MIT; textos, fotografias e PDFs sob CC BY-NC 4.0. / An author-led creative research laboratory on embroidery as a practice of memory, knowledge and transformation. Code under MIT; texts, photographs and PDFs under CC BY-NC 4.0."
 keywords:
-  - embroidery
   - bordado
+  - embroidery
+  - memória
   - memory
+  - organização do conhecimento
   - knowledge organization
+  - arquivo digital
   - digital archive
+  - arte têxtil
+  - textile art

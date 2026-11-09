@@ -6,7 +6,7 @@
 [![Idiomas](https://img.shields.io/badge/idiomas-PT--BR%20%7C%20EN--US-556A82)](#)
 [![Código: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-35322F)](LICENSE)
 [![Conteúdos: CC BY-NC 4.0](https://img.shields.io/badge/conte%C3%BAdos-CC%20BY--NC%204.0-996515)](LICENSE-ASSETS.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23460361.svg)](https://doi.org/10.5281/zenodo.23460361)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24094716.svg)](https://doi.org/10.5281/zenodo.24094716)
 
 **Experimento 01 · Sistema Devir Bordado**
 
@@ -63,7 +63,7 @@ The name **Devir Bordado** combines two concepts related to transformation and t
 | Website / Site | [devirbordado.space](https://devirbordado.space) |
 | Repository / Repositório | [github.com/devirbordado/devir-bordado.github.io](https://github.com/devirbordado/devir-bordado.github.io) |
 | Citable DOI, institutional document / DOI citável, documento institucional | [10.5281/zenodo.23460361](https://doi.org/10.5281/zenodo.23460361) · [Zenodo record](https://zenodo.org/records/23460361) |
-| Citable DOI, whole repository / DOI citável, repositório completo | *forthcoming, with release v1.0.0 / em breve, com a versão v1.0.0* |
+| Citable DOI, whole repository / DOI citável, repositório completo | [10.5281/zenodo.24094716](https://doi.org/10.5281/zenodo.24094716) |
 | How to cite / Como citar | [`CITATION.cff`](CITATION.cff) (GitHub shows "Cite this repository" / o GitHub mostra "Cite this repository") |
 | Contact / Contato | contato@devirbordado.space |
 
