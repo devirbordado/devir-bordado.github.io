@@ -2,7 +2,7 @@
 title: "Política de privacidade"
 translationKey: privacy
 type: legal
-updated: "2026-11-07"
+updated: "2026-11-10"
 version: "1.0"
 ---
 
@@ -28,7 +28,7 @@ Iara Lima, fundadora do Devir Bordado, é a controladora dos dados e também ate
 | Visita ao site | endereço IP e dados técnicos de acesso (navegador, página pedida, data e hora), registrados pelos serviços de hospedagem e de rede | entregar as páginas e manter o site seguro e funcionando | legítimo interesse (art. 7º, IX) |
 | Estatísticas | dados de navegação coletados pelo Google Analytics (páginas vistas, tempo de visita, tipo de dispositivo, país e cidade aproximados), por meio de identificadores em cookies | entender, de forma agregada, como o site é usado | consentimento (art. 7º, I) |
 | Sua escolha sobre cookies | a própria escolha (aceitar ou recusar) e a data, guardadas só no seu navegador | lembrar sua decisão por 12 meses | obrigação de respeitar seu consentimento e legítimo interesse |
-| Newsletter | e-mail, idioma preferido e data do aceite | enviar as novidades do laboratório | consentimento (art. 7º, I) |
+| Newsletter | e-mail e data da confirmação da inscrição | enviar as novidades do laboratório | consentimento (art. 7º, I) |
 | Comentários | nome, e-mail e texto do comentário | publicar o comentário depois de moderado | consentimento (art. 7º, I) |
 | Mensagens por e-mail | nome, e-mail e conteúdo da mensagem | responder a você | legítimo interesse (art. 7º, IX) |
 | Verificação anti-robô | sinais técnicos do navegador e endereço IP, tratados pelo Cloudflare Turnstile nos formulários | impedir envios automáticos | legítimo interesse (art. 7º, IX) |
@@ -46,7 +46,7 @@ Os dados são tratados por prestadores de serviço que fazem o site funcionar. E
 - **GitHub** (Microsoft): hospeda as páginas do site e recebe o endereço IP de quem as acessa.
 - **Cloudflare**: verificação anti-robô (Turnstile), funções dos formulários e armazenamento dos arquivos para download. Processa dados só de quem usa esses recursos, a partir do momento em que eles forem ativados.
 - **Hostinger**: registro do domínio, DNS (o "endereço" do site) e caixas de e-mail, por onde chegam as mensagens enviadas a nós.
-- **Brevo** (envio da newsletter): recebe o e-mail, o idioma e a data do aceite de quem se inscreve, e também dados de entrega e abertura dos e-mails. Segundo o próprio Brevo, os dados ficam em servidores da União Europeia.
+- **Brevo** (envio da newsletter): recebe o e-mail e a data da confirmação de quem se inscreve (a inscrição só vale depois do clique no link do e-mail de confirmação), e também dados de entrega e abertura dos e-mails. Segundo o próprio Brevo, os dados ficam em servidores da União Europeia.
 - **Google (Google Analytics)**: recebe dados de navegação somente se você permitir as estatísticas.
 - **YouTube (Google) e Spotify**: só recebem dados se você clicar para carregar o vídeo ou a playlist.
 

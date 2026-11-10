@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrap">
+{{ partial "divider.html" (dict "label" .Title "color" "#5E2751" "tag" "h1") }}
+<div class="nl-ok">
+{{ .Content }}
+<p><a class="btn" href="{{ "" | relLangURL }}">{{ i18n "nl_back" }}</a></p>
+</div>
+</div>
+<style>.nl-ok{max-width:36rem;margin:2rem auto 3rem;text-align:center}.nl-ok p{margin:0 0 1rem;font-size:1.2rem;line-height:1.6}.nl-ok .btn{color:var(--bg)!important;margin-top:.8rem}</style>
+{{ end }}

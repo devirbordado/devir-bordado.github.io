@@ -2,7 +2,7 @@
 title: "Política de cookies"
 translationKey: cookies
 type: legal
-updated: "2026-11-07"
+updated: "2026-11-10"
 version: "1.0"
 ---
 
@@ -13,7 +13,7 @@ Cookies são pequenos arquivos que um site guarda no seu navegador. Esta políti
 | Categoria | Para que serve | O que é guardado | Duração | Precisa do seu consentimento |
 |---|---|---|---|---|
 | Necessário | lembrar sua escolha sobre cookies | `db_consent_v1`, no armazenamento local do navegador (não é cookie e não é enviado a nenhum servidor) | 12 meses | Não |
-| Necessário | proteger os formulários contra robôs | verificação do Cloudflare Turnstile, que só é carregada nas páginas com formulário | apenas durante a verificação | Não |
+| Necessário | proteger os formulários contra robôs | verificação do Cloudflare Turnstile, que só é carregada quando você começa a preencher o formulário | apenas durante a verificação | Não |
 | Estatísticas | entender, de forma agregada, como o site é usado | Google Analytics: cookies `_ga` e `_ga_MRJ64TZNZ8` | até 2 anos | Sim |
 | Conteúdo incorporado | reproduzir vídeos e playlists | cookies e dados do YouTube (Google) e do Spotify, definidos por eles | definida por eles | Sim, dado pelo clique |
 

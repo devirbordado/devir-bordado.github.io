@@ -1,0 +1,11 @@
+/* Formulário de newsletter do rodapé */
+.nl-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.nl .nl-ts{min-height:65px;display:flex;align-items:center;justify-content:center}
+.nl .nl-ts.pronto{border:0;padding:0;margin:.6rem 0;justify-content:flex-start}
+.nl .btn[disabled]{opacity:.6;cursor:wait}
+.nl-msg{min-height:1.4em;margin:.4rem 0 0}
+.nl-msg.erro{color:#951822}
+.nl-msg.ok{color:#35322F}
+.nl input:focus-visible,.nl .btn:focus-visible{outline:2px solid #74415B;outline-offset:2px}
+@media (max-width:899px){.fgrid>.nl-col{grid-column:1/-1}}
+@media (min-width:560px) and (max-width:899px){.nl-col form{max-width:26rem}}

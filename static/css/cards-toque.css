@@ -1,0 +1,17 @@
+/* Cartões da Home em telas de toque (sem "passar o mouse"):
+   a imagem aparece quase inteira, com uma faixa fina na parte de baixo
+   (preto a 80% de opacidade, sem cor da seção) e o nome em papiro.
+   No computador (com mouse) nada muda: imagem pura e véu colorido ao passar o mouse. */
+@media (hover:none){
+  .card .nm{
+    inset:auto 0 0 0;
+    display:block;
+    background:rgba(0,0,0,.8);
+    padding:.4rem .5rem;
+    text-align:center;
+    font-size:1.1rem;
+    line-height:1.25;
+    opacity:1;
+    transition:none;
+  }
+}

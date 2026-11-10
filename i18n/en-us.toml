@@ -120,3 +120,21 @@
   other = "Demo form, not connected yet."
 [feed_novidades]
   other = "News"
+[nl_ok]
+  other = "Almost there! If the address is correct, you will get an email asking you to confirm your subscription. If it does not arrive in a few minutes, check your spam folder too."
+[nl_invalid]
+  other = "That email does not look valid. Please check it and try again."
+[nl_verify]
+  other = "Please complete the anti-spam check before sending."
+[nl_failed]
+  other = "We could not validate the anti-spam check. Please try again."
+[nl_sending]
+  other = "Sending…"
+[nl_error]
+  other = "We could not complete this right now. Please try again in a few minutes."
+[nl_network]
+  other = "Could not reach the service. Check your connection and try again."
+[nl_hp]
+  other = "Do not fill in this field"
+[nl_back]
+  other = "Back to home"

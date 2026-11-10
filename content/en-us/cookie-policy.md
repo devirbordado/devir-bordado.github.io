@@ -2,7 +2,7 @@
 title: "Cookie policy"
 translationKey: cookies
 type: legal
-updated: "2026-11-07"
+updated: "2026-11-10"
 version: "1.0"
 ---
 
@@ -13,7 +13,7 @@ Cookies are small files that a website stores in your browser. This policy expla
 | Category | What it is for | What is stored | Duration | Needs your consent |
 |---|---|---|---|---|
 | Necessary | remember your cookie choice | `db_consent_v1`, in the browser's local storage (not a cookie and never sent to any server) | 12 months | No |
-| Necessary | protect forms against bots | Cloudflare Turnstile check, loaded only on pages with a form | only during the check | No |
+| Necessary | protect forms against bots | Cloudflare Turnstile check, loaded only when you start filling in the form | only during the check | No |
 | Statistics | understand, in aggregate, how the site is used | Google Analytics: cookies `_ga` and `_ga_MRJ64TZNZ8` | up to 2 years | Yes |
 | Embedded content | play videos and playlists | cookies and data from YouTube (Google) and Spotify, set by them | set by them | Yes, given by the click |
 

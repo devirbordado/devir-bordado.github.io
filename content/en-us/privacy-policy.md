@@ -2,7 +2,7 @@
 title: "Privacy policy"
 translationKey: privacy
 type: legal
-updated: "2026-11-07"
+updated: "2026-11-10"
 version: "1.0"
 ---
 
@@ -28,7 +28,7 @@ Iara Lima, founder of Devir Bordado, is the data controller and also acts as the
 | Visiting the site | IP address and technical access data (browser, page requested, date and time), recorded by the hosting and network services | deliver the pages and keep the site secure and running | legitimate interest (Art. 7, IX) |
 | Statistics | browsing data collected by Google Analytics (pages viewed, visit length, device type, approximate country and city), through cookie identifiers | understand, in aggregate, how the site is used | consent (Art. 7, I) |
 | Your cookie choice | the choice itself (accept or decline) and its date, stored only in your browser | remember your decision for 12 months | duty to respect your consent and legitimate interest |
-| Newsletter | email, preferred language and date of consent | send the lab's news | consent (Art. 7, I) |
+| Newsletter | email and date of subscription confirmation | send the lab's news | consent (Art. 7, I) |
 | Comments | name, email and comment text | publish the comment after moderation | consent (Art. 7, I) |
 | Email messages | name, email and message content | reply to you | legitimate interest (Art. 7, IX) |
 | Anti-bot check | technical browser signals and IP address, processed by Cloudflare Turnstile on forms | prevent automated submissions | legitimate interest (Art. 7, IX) |
@@ -46,7 +46,7 @@ Data is processed by service providers that make the site work. They process it 
 - **GitHub** (Microsoft): hosts the site's pages and receives the IP address of whoever accesses them.
 - **Cloudflare**: anti-bot check (Turnstile), form functions and storage of download files. It processes data only from people who use these features, from the moment they are activated.
 - **Hostinger**: domain registration, DNS (the site's "address") and mailboxes, where the messages sent to us arrive.
-- **Brevo** (newsletter delivery): receives the email, language and date of consent of subscribers, and also email delivery and open data. According to Brevo itself, data is kept on servers in the European Union.
+- **Brevo** (newsletter delivery): receives the email and the date of confirmation of subscribers (a subscription only counts after the confirmation link in the email is clicked), and also email delivery and open data. According to Brevo itself, data is kept on servers in the European Union.
 - **Google (Google Analytics)**: receives browsing data only if you allow statistics.
 - **YouTube (Google) and Spotify**: receive data only if you click to load the video or playlist.
 

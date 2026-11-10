@@ -120,3 +120,21 @@
   other = "Formulário de demonstração, ainda não conectado."
 [feed_novidades]
   other = "Novidades"
+[nl_ok]
+  other = "Quase lá! Se o endereço estiver correto, você vai receber um e-mail para confirmar a inscrição. Se não chegar em alguns minutos, olhe também a caixa de spam."
+[nl_invalid]
+  other = "Esse e-mail não parece válido. Confira e tente de novo."
+[nl_verify]
+  other = "Complete a verificação antispam antes de enviar."
+[nl_failed]
+  other = "Não foi possível validar a verificação antispam. Tente de novo."
+[nl_sending]
+  other = "Enviando…"
+[nl_error]
+  other = "Não conseguimos concluir agora. Tente novamente em alguns minutos."
+[nl_network]
+  other = "Sem conexão com o serviço. Verifique sua internet e tente de novo."
+[nl_hp]
+  other = "Não preencha este campo"
+[nl_back]
+  other = "Voltar ao início"
