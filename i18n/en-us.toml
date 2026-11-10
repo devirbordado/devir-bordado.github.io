@@ -138,3 +138,7 @@
   other = "Do not fill in this field"
 [nl_back]
   other = "Back to home"
+[nl_ts_click]
+  other = "Click to verify"
+[nl_ts_loading]
+  other = "Loading verification…"

@@ -3,27 +3,35 @@
    pessoa começa a usar o formulário. */
 (function(){
 var f=document.querySelector('form.nl'); if(!f) return;
-var box=f.querySelector('.nl-ts'), msg=f.querySelector('.nl-msg'), btn=f.querySelector('button[type=submit]'), email=f.elements.email;
+var box=f.querySelector('.nl-ts'), inner=f.querySelector('.nl-ts-in'), ph=f.querySelector('.nl-ts-btn'), msg=f.querySelector('.nl-msg'), btn=f.querySelector('button[type=submit]'), email=f.elements.email;
 var d=f.dataset, token='', wid=null, loading=false, ready=false;
 var last='';
 function say(k,cls){last=k;msg.textContent=d['m'+k.charAt(0).toUpperCase()+k.slice(1)]||'';msg.className='nl-msg fine '+(cls||'')}
+function fit(){ // encolhe o retângulo de 300x65 quando a coluna é mais estreita
+  var w=box.clientWidth||300, k=Math.min(1,w/300);
+  inner.style.transform=k<1?'scale('+k+')':'';
+  box.style.height=Math.round(65*k)+'px';
+}
+fit(); window.addEventListener('resize',fit);
 function render(){
-  if(ready||!window.turnstile) return; ready=true; box.textContent=''; box.classList.add('pronto');
-  wid=turnstile.render(box,{sitekey:d.sitekey,language:d.lang==='en-us'?'en':'pt-br',theme:'light',
-    size:box.offsetWidth<300?'compact':'normal',
+  if(ready||!window.turnstile) return; ready=true; inner.textContent='';
+  wid=turnstile.render(inner,{sitekey:d.sitekey,language:d.lang==='en-us'?'en':'pt-br',theme:'light',size:'normal',
     callback:function(t){token=t;if(last==='verify')say('')},
     'expired-callback':function(){token=''},
     'error-callback':function(){token='';say('failed','erro')}});
 }
 function load(){
   if(loading) return; loading=true;
+  var st=ph&&ph.querySelector('strong'), st0=st&&st.textContent; if(st&&d.mLoading) st.textContent=d.mLoading;
   window.__dbTs=render;
   var s=document.createElement('script');
   s.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=__dbTs';
-  s.async=true; s.defer=true; s.onerror=function(){loading=false;say('network','erro')};
+  s.async=true; s.defer=true; s.onerror=function(){loading=false;if(st&&st0)st.textContent=st0;say('network','erro')};
   document.head.appendChild(s);
 }
-['focusin','pointerdown','input'].forEach(function(e){f.addEventListener(e,load,{once:true})});
+email.addEventListener('focus',load,{once:true});
+f.addEventListener('pointerdown',load,{once:true});
+if(ph) ph.addEventListener('click',load,{once:true});
 f.addEventListener('submit',function(ev){
   ev.preventDefault();
   if(btn.disabled) return;

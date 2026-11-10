@@ -1,11 +1,22 @@
 /* Formulário de newsletter do rodapé */
 .nl-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.nl .nl-ts{min-height:65px;display:flex;align-items:center;justify-content:center}
-.nl .nl-ts.pronto{border:0;padding:0;margin:.6rem 0;justify-content:flex-start}
 .nl .btn[disabled]{opacity:.6;cursor:wait}
 .nl-msg{min-height:1.4em;margin:.4rem 0 0}
 .nl-msg.erro{color:#951822}
 .nl-msg.ok{color:#35322F}
-.nl input:focus-visible,.nl .btn:focus-visible{outline:2px solid #74415B;outline-offset:2px}
-@media (max-width:899px){.fgrid>.nl-col{grid-column:1/-1}}
-@media (min-width:560px) and (max-width:899px){.nl-col form{max-width:26rem}}
+.nl input:focus-visible,.nl .btn:focus-visible,.nl-ts-btn:focus-visible{outline:2px solid #74415B;outline-offset:2px}
+
+/* Verificação antispam: retângulo de 300x65 (tamanho do Turnstile),
+   reduzido por script quando a coluna é mais estreita que 300px. */
+.nl .nl-ts{position:relative;width:100%;height:65px;margin:.6rem 0}
+.nl .nl-ts-in{position:absolute;left:0;top:0;width:300px;height:65px;transform-origin:0 0}
+.fgrid>*{min-width:0}
+.nl-ts-btn{display:flex;align-items:center;gap:.8rem;width:300px;height:65px;margin:0;padding:0 1rem;background:#FAFAFA;border:1px solid #C9C9C9;border-radius:4px;color:#35322F;font:inherit;text-align:left;cursor:pointer}
+.nl-ts-btn:hover{border-color:#74415B}
+.nl-ts-box{flex:none;width:24px;height:24px;background:#fff;border:2px solid #74415B;border-radius:3px}
+.nl-ts-txt{display:grid;gap:.1rem;line-height:1.25}
+.nl-ts-txt strong{font-size:.98rem;font-weight:600}
+.nl-ts-txt small{font-size:.72rem;color:#6b6258}
+
+/* Em telas até 1099px a newsletter ocupa a linha inteira, para o retângulo de verificação não ficar pequeno demais */
+@media (max-width:1099px){.fgrid>.nl-col{grid-column:1/-1}.nl-col form{max-width:26rem}}

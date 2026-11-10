@@ -138,3 +138,7 @@
   other = "Não preencha este campo"
 [nl_back]
   other = "Voltar ao início"
+[nl_ts_click]
+  other = "Clique para verificar"
+[nl_ts_loading]
+  other = "Carregando verificação…"
