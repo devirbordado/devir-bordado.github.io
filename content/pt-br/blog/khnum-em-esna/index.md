@@ -56,8 +56,6 @@ As pinturas do Templo de Esna lembram que a cor também é um documento históri
 
 Hoje, essa paleta de cores, somada às camadas do tempo pelos anos que se passaram, me fez olhar para as colunas do vestíbulo e ver, imediatamente, uma pilha de tecidos de linho natural pronta para ser bordada. Para mim, foi a mesma visão de uma loja de tecidos. No momento em que essa imagem se consolidou, percebi que essa era a identidade que o Devir Bordado ocuparia no mundo. Não porque fala de tecidos, mas porque fala de permanência através do tempo.
 
-*Nota da autora: se você me visita com certa recorrência, deve ter notado que estou “arrumando a casa” por aqui. Haverá grandes mudanças nas próximas semanas, afinal, sempre foi sobre devir.*
-
 {{< mural legenda="Imagens: Ahmed Amin/Egypt Ministry of Tourism and Antiquities." >}}
 {{< foto src="/assets/images/blog/2026110801-mural-1.webp" alt="Relevo pintado de duas figuras oferecendo vasos, uma delas com corpo de serpente, ao lado de colunas de hieróglifos." >}}
 {{< foto src="/assets/images/blog/2026110801-mural-2.webp" alt="Colunas do templo com capitéis em forma de papiro pintados, hieróglifos ao fundo e andaimes." >}}
