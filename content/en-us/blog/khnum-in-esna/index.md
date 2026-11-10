@@ -56,8 +56,6 @@ The paintings of the Temple of Esna remind us that color is also a historical do
 
 Today, this color palette, added to the layers of time by the years that have passed, made me look at the columns of the vestibule and immediately see a pile of natural linen fabrics ready to be embroidered. For me, it was the same vision as a fabric store. At the moment this image consolidated, I realized that this was the identity that Devir Bordado would occupy in the world. Not because it speaks of fabrics, but because it speaks of permanence through time.
 
-*Author’s note: If you visit me with some regularity, you must have noticed that I am “tidying up the house” around here. There will be big changes in the coming weeks after all, it was always about becoming.*
-
 {{< mural legenda="Images: Ahmed Amin/Egypt Ministry of Tourism and Antiquities." >}}
 {{< foto src="/assets/images/blog/2026110801-mural-1.webp" alt="Painted relief of two figures offering vessels, one with a serpent's body, beside columns of hieroglyphs." >}}
 {{< foto src="/assets/images/blog/2026110801-mural-2.webp" alt="Temple columns with painted papyrus-shaped capitals, hieroglyphs in the background and scaffolding." >}}
