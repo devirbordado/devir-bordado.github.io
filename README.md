@@ -50,8 +50,8 @@ The name **Devir Bordado** combines two concepts related to transformation and t
 | Generator / Gerador | **Hugo** 0.168 Extended | turns Markdown texts and templates into static pages / transforma textos em Markdown e modelos em páginas estáticas |
 | Publishing / Publicação | **GitHub Pages** + GitHub Actions | builds on every change and daily at 03:00 (Brasília) / compila a cada alteração e todos os dias às 03:00 (Brasília) |
 | Domain / Domínio | **Hostinger** | domain, DNS and institutional email / domínio, DNS e e-mail institucional |
-| Functions / Funções (*in activation / em ativação*) | **Cloudflare** | anti-bot check (Turnstile), comments and download files / verificação anti-robô (Turnstile), comentários e arquivos para download |
-| Newsletter (*in activation / em ativação*) | **Brevo** | sign-up, confirmation and sending / cadastro, confirmação e envio |
+| Functions / Funções | **Cloudflare** | anti-bot check (Turnstile) and sign-up function (Worker) active; comments and download files *in activation / em ativação* / verificação anti-robô (Turnstile) e função de cadastro (Worker) ativas; comentários e arquivos para download em ativação |
+| Newsletter | **Brevo** | double opt-in sign-up with separate PT and EN lists; automatic sending by RSS *in activation / em ativação* / cadastro com confirmação em duas etapas, listas PT e EN separadas; envio automático por RSS em ativação |
 | Archive / Arquivo | **Zenodo** | archived versions with DOI / versões arquivadas com DOI |
 
 ---
