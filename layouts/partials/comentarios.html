@@ -1,0 +1,44 @@
+{{- /* Comentários do blog. Só aparece com "comentarios": true em data/recursos.json
+       e com "comentarios_worker_url" preenchido em data/formularios.json.
+       Uso, no layout do post:  {{ partial "comentarios.html" . }}  */ -}}
+{{- $f := hugo.Data.formularios -}}
+{{- if and hugo.Data.recursos.comentarios $f.comentarios_worker_url }}
+{{- $a := hugo.Data.author -}}
+<link rel="stylesheet" href="/css/comentarios.css">
+<section class="cmt" id="comentarios" aria-labelledby="cmt-h"
+  data-worker="{{ $f.comentarios_worker_url }}" data-sitekey="{{ $f.turnstile_sitekey }}"
+  data-page="{{ .RelPermalink }}" data-lang="{{ site.Language.Lang }}" data-author="{{ $a.name }}" data-max="1200"
+  data-m-loading="{{ i18n "cm_loading" }}" data-m-none="{{ i18n "cm_none" }}" data-m-loaderr="{{ i18n "cm_loaderr" }}"
+  data-m-anon="{{ i18n "cm_anon" }}" data-m-author="{{ i18n "cm_author" }}"
+  data-m-view="{{ i18n "cm_view" }}" data-m-hide="{{ i18n "cm_hide" }}"
+  data-m-write="{{ i18n "cm_write" }}" data-m-close="{{ i18n "cm_close" }}"
+  data-m-ok="{{ i18n "cm_ok" }}" data-m-empty="{{ i18n "cm_empty" }}" data-m-long="{{ i18n "cm_long" }}"
+  data-m-links="{{ i18n "cm_links" }}" data-m-email="{{ i18n "cm_email_bad" }}"
+  data-m-verify="{{ i18n "cm_verify" }}" data-m-failed="{{ i18n "cm_failed" }}"
+  data-m-rate="{{ i18n "cm_rate" }}" data-m-daily="{{ i18n "cm_daily" }}"
+  data-m-sending="{{ i18n "cm_sending" }}" data-m-error="{{ i18n "cm_error" }}" data-m-network="{{ i18n "cm_network" }}"
+  data-m-tsload="{{ i18n "nl_ts_loading" }}">
+  <h2 id="cmt-h">{{ i18n "comments" }}</h2>
+  <p class="cmt-actions">
+    <button type="button" class="cmt-btn" data-act="list" aria-expanded="false" aria-controls="cmt-list">{{ i18n "cm_view" }}</button>
+    <button type="button" class="cmt-btn" data-act="form" aria-expanded="false" aria-controls="cmt-form">{{ i18n "cm_write" }}</button>
+  </p>
+  <p class="cmt-msg fine" role="status" aria-live="polite"></p>
+  <div class="cmt-list" id="cmt-list" hidden></div>
+  <form class="cmt-form" id="cmt-form" method="post" action="#" novalidate hidden>
+    <div class="cmt-row">
+      <input type="text" name="name" maxlength="60" autocomplete="given-name" placeholder="{{ i18n "c_name" }} {{ i18n "cm_opt" }}" aria-label="{{ i18n "c_name" }} {{ i18n "cm_opt" }}">
+      <input type="text" name="surname" maxlength="60" autocomplete="family-name" placeholder="{{ i18n "c_last" }} {{ i18n "cm_opt" }}" aria-label="{{ i18n "c_last" }} {{ i18n "cm_opt" }}">
+    </div>
+    <input type="email" name="email" maxlength="254" autocomplete="email" placeholder="{{ i18n "c_email" }} {{ i18n "cm_opt" }}" aria-label="{{ i18n "c_email" }} {{ i18n "cm_opt" }}">
+    <p class="cmt-hint fine">{{ i18n "cm_email_hint" }}</p>
+    <textarea name="comment" rows="5" maxlength="1200" required placeholder="{{ i18n "c_text" }}" aria-label="{{ i18n "c_text" }}"></textarea>
+    <p class="cmt-count fine" aria-hidden="true"><span class="cmt-n">0</span> / 1200</p>
+    <div class="cmt-hp" aria-hidden="true"><label>{{ i18n "nl_hp" }}<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="cmt-ts"><div class="cmt-ts-in"><button type="button" class="cmt-ts-btn"><span class="cmt-ts-box" aria-hidden="true"></span><span class="cmt-ts-txt"><strong>{{ i18n "nl_ts_click" }}</strong><small>{{ i18n "anti" }}</small></span></button></div></div>
+    <button class="btn" type="submit">{{ i18n "c_send" }}</button>
+    <p class="fine cmt-note">{{ i18n "cm_note" }} <a href="{{ cond (eq site.Language.Lang "en-us") "privacy-policy/" "politica-de-privacidade/" | relLangURL }}">{{ i18n "cm_privacy" }}</a>.</p>
+  </form>
+</section>
+<script src="/js/comentarios.js" defer></script>
+{{- end }}

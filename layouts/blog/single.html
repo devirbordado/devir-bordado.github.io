@@ -15,8 +15,7 @@
 <div class="endblock">
 <section class="auth"><img class="avatar" src="{{ $a.photo }}" alt="{{ $a.name }}"><div><strong>{{ $a.name }}</strong><p>{{ index $a.bio site.Language.Lang }}</p></div></section>
 <section class="cloud"><h2>{{ i18n "tags_label" }}</h2><p>{{ range sort (first 50 site.Taxonomies.tags.ByCount) "Name" }}{{ $s := add 0.9 (mul 0.1 .Count) }}{{ if gt $s 1.6 }}{{ $s = 1.6 }}{{ end }}<a href="{{ .Page.RelPermalink }}" style="font-size:{{ $s }}rem">{{ .Page.LinkTitle }}</a> {{ end }}</p></section>
-{{ if hugo.Data.recursos.comentarios }}<section class="cmt"><h2>{{ i18n "comments" }}</h2>
-<form onsubmit="return false"><input type="text" placeholder="{{ i18n "c_name" }}" aria-label="{{ i18n "c_name" }}"><input type="text" placeholder="{{ i18n "c_last" }}" aria-label="{{ i18n "c_last" }}"><input type="email" placeholder="{{ i18n "c_email" }}" aria-label="{{ i18n "c_email" }}"><textarea rows="4" placeholder="{{ i18n "c_text" }}" aria-label="{{ i18n "c_text" }}"></textarea><div class="anti">{{ i18n "anti" }}</div><button class="btn" type="submit">{{ i18n "c_send" }}</button><p class="fine">{{ i18n "c_note" }}</p></form></section>{{ end }}
 </div>
+{{ partial "comentarios.html" . }}
 </article></div>
 {{ end }}

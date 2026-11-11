@@ -1,4 +1,5 @@
 {
  "worker_url": "https://devir-formularios.cidadcinza.workers.dev/",
- "turnstile_sitekey": "0x4AAAAAAF7SNFUOHagOIuDr"
+ "turnstile_sitekey": "0x4AAAAAAF7SNFUOHagOIuDr",
+ "comentarios_worker_url": "https://devir-comentarios.cidadcinza.workers.dev/"
 }

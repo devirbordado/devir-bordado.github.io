@@ -142,3 +142,53 @@
   other = "Click to verify"
 [nl_ts_loading]
   other = "Loading verification…"
+[cm_view]
+  other = "View comments"
+[cm_hide]
+  other = "Hide comments"
+[cm_write]
+  other = "Leave a comment"
+[cm_close]
+  other = "Close form"
+[cm_opt]
+  other = "(optional)"
+[cm_loading]
+  other = "Loading…"
+[cm_none]
+  other = "There are no comments on this page yet."
+[cm_loaderr]
+  other = "Could not load the comments right now. Please try again shortly."
+[cm_anon]
+  other = "Anonymous"
+[cm_author]
+  other = "Author"
+[cm_email_hint]
+  other = "Your email is only used to let you know your comment was published. It is not shown on the site and is deleted after approval."
+[cm_note]
+  other = "Comments are moderated: they appear here only after approval. First name, last name and email are optional (without a name, the comment appears as anonymous). See the"
+[cm_privacy]
+  other = "Privacy Policy"
+[cm_ok]
+  other = "We received your comment. It will appear here once approved. Thank you!"
+[cm_empty]
+  other = "Please write your comment before sending."
+[cm_long]
+  other = "The comment is over the 1,200-character limit."
+[cm_links]
+  other = "Please use at most 2 links in a comment."
+[cm_email_bad]
+  other = "Please check your email: it looks incomplete."
+[cm_verify]
+  other = "Please complete the anti-spam check before sending."
+[cm_failed]
+  other = "We could not validate the anti-spam check. Please try again."
+[cm_rate]
+  other = "Too many submissions in a short time. Please try again later."
+[cm_daily]
+  other = "Comments are paused today because of too many submissions. Please try again tomorrow."
+[cm_sending]
+  other = "Sending…"
+[cm_error]
+  other = "We could not send this right now. Please try again in a few minutes."
+[cm_network]
+  other = "Could not reach the service. Check your connection and try again."

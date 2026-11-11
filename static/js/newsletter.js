@@ -22,6 +22,8 @@ function render(){
 }
 function load(){
   if(loading) return; loading=true;
+  if(window.turnstile){render();return}                      // outro formulário da página já carregou o Turnstile
+  if(document.querySelector('script[src*="turnstile/v0/api.js"]')){var iv=setInterval(function(){if(window.turnstile){clearInterval(iv);render()}},100);return}
   var st=ph&&ph.querySelector('strong'), st0=st&&st.textContent; if(st&&d.mLoading) st.textContent=d.mLoading;
   window.__dbTs=render;
   var s=document.createElement('script');

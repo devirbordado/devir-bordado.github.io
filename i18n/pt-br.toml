@@ -142,3 +142,53 @@
   other = "Clique para verificar"
 [nl_ts_loading]
   other = "Carregando verificação…"
+[cm_view]
+  other = "Ver comentários"
+[cm_hide]
+  other = "Ocultar comentários"
+[cm_write]
+  other = "Deixar um comentário"
+[cm_close]
+  other = "Fechar formulário"
+[cm_opt]
+  other = "(opcional)"
+[cm_loading]
+  other = "Carregando…"
+[cm_none]
+  other = "Ainda não há comentários nesta página."
+[cm_loaderr]
+  other = "Não foi possível carregar os comentários agora. Tente de novo em instantes."
+[cm_anon]
+  other = "Anônimo"
+[cm_author]
+  other = "Autora"
+[cm_email_hint]
+  other = "O e-mail só serve para avisar que seu comentário foi publicado. Não aparece no site e é apagado depois da aprovação."
+[cm_note]
+  other = "Os comentários são moderados: aparecem aqui só depois de aprovados. Nome, sobrenome e e-mail são opcionais (sem nome, o comentário aparece como anônimo). Veja a"
+[cm_privacy]
+  other = "Política de privacidade"
+[cm_ok]
+  other = "Recebemos o seu comentário. Ele aparecerá aqui depois de aprovado. Obrigada!"
+[cm_empty]
+  other = "Escreva o seu comentário antes de enviar."
+[cm_long]
+  other = "O comentário passou do limite de 1.200 caracteres."
+[cm_links]
+  other = "Use no máximo 2 links no comentário."
+[cm_email_bad]
+  other = "Confira o e-mail: ele parece incompleto."
+[cm_verify]
+  other = "Complete a verificação antispam antes de enviar."
+[cm_failed]
+  other = "Não foi possível validar a verificação antispam. Tente de novo."
+[cm_rate]
+  other = "Muitos envios em pouco tempo. Tente de novo mais tarde."
+[cm_daily]
+  other = "Os comentários estão pausados hoje por excesso de envios. Tente amanhã."
+[cm_sending]
+  other = "Enviando…"
+[cm_error]
+  other = "Não conseguimos enviar agora. Tente novamente em alguns minutos."
+[cm_network]
+  other = "Sem conexão com o serviço. Verifique sua internet e tente de novo."
