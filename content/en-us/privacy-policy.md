@@ -2,7 +2,7 @@
 title: "Privacy policy"
 translationKey: privacy
 type: legal
-updated: "2026-11-10"
+updated: "2026-11-11"
 version: "1.0"
 ---
 
@@ -19,7 +19,7 @@ Iara Lima, founder of Devir Bordado, is the data controller and also acts as the
 - Visit statistics (Google Analytics) only work if you allow them, and without advertising features.
 - YouTube videos and Spotify playlists only load after you click.
 - Your personal data is collected only if you subscribe to the newsletter, comment or write to us.
-- The newsletter, comments and downloads are being activated gradually. This policy already describes how data will be handled when these features go live.
+- The newsletter and comments are already active. Downloads are being activated gradually; this policy already describes how data will be handled when they go live.
 
 ## 3. What data we process and why
 
@@ -29,13 +29,13 @@ Iara Lima, founder of Devir Bordado, is the data controller and also acts as the
 | Statistics | browsing data collected by Google Analytics (pages viewed, visit length, device type, approximate country and city), through cookie identifiers | understand, in aggregate, how the site is used | consent (Art. 7, I) |
 | Your cookie choice | the choice itself (accept or decline) and its date, stored only in your browser | remember your decision for 12 months | duty to respect your consent and legitimate interest |
 | Newsletter | email and date of subscription confirmation | send the lab's news | consent (Art. 7, I) |
-| Comments | name, email and comment text | publish the comment after moderation | consent (Art. 7, I) |
+| Comments | first and last name (optional), email (optional), comment text, page commented on and date; an irreversible code derived from the IP address (the IP itself is not stored) | publish the comment after moderation, notify you by email that it was published (if you gave an email) and limit excessive submissions | consent (Art. 7, I) and legitimate interest (Art. 7, IX) for the submission limit |
 | Email messages | name, email and message content | reply to you | legitimate interest (Art. 7, IX) |
 | Anti-bot check | technical browser signals and IP address, processed by Cloudflare Turnstile on forms | prevent automated submissions | legitimate interest (Art. 7, IX) |
 | Downloads | IP address and technical request data, recorded by the service that stores the files | deliver the file you asked for | legitimate interest (Art. 7, IX) |
 | Videos and playlists | the data YouTube (Google) and Spotify collect when you click to load the player, including your IP address | show the embedded content | consent, given by the click |
 
-The email you give in comments is never shown publicly. The site's search runs inside your browser: what you type is not sent to anyone.
+First name, last name and email are optional in comments; without a name, the comment appears as anonymous. The email you give is never shown publicly, is used only to tell you the comment was published, and is deleted from our storage when the comment is approved. The site's search runs inside your browser: what you type is not sent to anyone.
 
 We do not use data for automated decisions or to build behavior or consumer profiles.
 
@@ -44,9 +44,9 @@ We do not use data for automated decisions or to build behavior or consumer prof
 Data is processed by service providers that make the site work. They process it on the lab's behalf or, for embedded content, on their own behalf under their own policies.
 
 - **GitHub** (Microsoft): hosts the site's pages and receives the IP address of whoever accesses them.
-- **Cloudflare**: anti-bot check (Turnstile), form functions and storage of download files. It processes data only from people who use these features, from the moment they are activated.
+- **Cloudflare**: anti-bot check (Turnstile), form and comment functions (Workers), temporary storage of submitted comments and of the counters that limit excessive submissions (KV) and, once activated, storage of download files. It processes data only from people who use these features.
 - **Hostinger**: domain registration, DNS (the site's "address") and mailboxes, where the messages sent to us arrive.
-- **Brevo** (newsletter delivery): receives the email and the date of confirmation of subscribers (a subscription only counts after the confirmation link in the email is clicked), and also email delivery and open data. According to Brevo itself, data is kept on servers in the European Union.
+- **Brevo** (newsletter delivery): receives the email and the date of confirmation of subscribers (a subscription only counts after the confirmation link in the email is clicked), and also email delivery and open data. Brevo also sends the comment-published notice, to those who gave an email, and keeps the record of that sending for the period it adopts. According to Brevo itself, data is kept on servers in the European Union.
 - **Google (Google Analytics)**: receives browsing data only if you allow statistics.
 - **YouTube (Google) and Spotify**: receive data only if you click to load the video or playlist.
 
@@ -59,7 +59,7 @@ These providers store and process data outside Brazil, especially in the United 
 ## 6. How long we keep data
 
 - **Newsletter:** until you unsubscribe; afterwards, only what the law requires.
-- **Comments:** while published, or until you ask for removal. Comments rejected in moderation are deleted.
+- **Comments:** while published, or until you ask for removal. Comments not yet moderated are deleted automatically after 30 days, and those rejected or removed in moderation are deleted. The email is deleted when the comment is approved. The submission-limit counters (which use the irreversible IP code) last at most 2 days.
 - **Email messages:** as long as needed to reply and keep a record of the contact.
 - **Statistics:** Google Analytics is set to keep event data for 2 months, the shortest period the tool offers. Statistics cookies last up to 2 years in your browser if you do not delete them.
 - **Cookie choice:** 12 months; after that the notice appears again.

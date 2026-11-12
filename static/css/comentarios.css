@@ -1,4 +1,8 @@
 /* Comentários do blog: botões, formulário, lista e árvore de respostas */
+
+/* Bloco final do post: autoria à esquerda; as tags ocupam o centro e a direita
+   (os comentários ficam abaixo, na largura do texto). No celular volta a uma coluna. */
+@media (min-width:900px){.endblock .cloud{grid-column:2 / 4}}
 .cmt{max-width:46rem;margin:3rem auto 0;padding-top:2rem;border-top:1px solid var(--pedra)}
 .cmt h2{font-size:1.1rem;font-weight:600;margin:0 0 .7rem}
 .cmt-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 .4rem}

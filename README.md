@@ -50,7 +50,7 @@ The name **Devir Bordado** combines two concepts related to transformation and t
 | Generator / Gerador | **Hugo** 0.168 Extended | turns Markdown texts and templates into static pages / transforma textos em Markdown e modelos em páginas estáticas |
 | Publishing / Publicação | **GitHub Pages** + GitHub Actions | builds on every change and daily at 03:00 (Brasília) / compila a cada alteração e todos os dias às 03:00 (Brasília) |
 | Domain / Domínio | **Hostinger** | domain, DNS and institutional email / domínio, DNS e e-mail institucional |
-| Functions / Funções | **Cloudflare** | anti-bot check (Turnstile) and sign-up function (Worker) active; comments and download files *in activation / em ativação* / verificação anti-robô (Turnstile) e função de cadastro (Worker) ativas; comentários e arquivos para download em ativação |
+| Functions / Funções | **Cloudflare** | anti-bot check (Turnstile), sign-up function and comments with prior moderation (Workers + KV) active; download files *in activation / em ativação* / verificação anti-robô (Turnstile), função de cadastro e comentários com moderação prévia (Workers + KV) ativos; arquivos para download em ativação |
 | Newsletter | **Brevo** | double opt-in sign-up with separate PT and EN lists; automatic sending by RSS *in activation / em ativação* / cadastro com confirmação em duas etapas, listas PT e EN separadas; envio automático por RSS em ativação |
 | Archive / Arquivo | **Zenodo** | archived versions with DOI / versões arquivadas com DOI |
 
@@ -80,6 +80,7 @@ The institutional document ***Arquitetura Institucional: fundação, identidade,
 - **Design:** Fraunces font (self-hosted), custom SVG logo and icons / fonte Fraunces (hospedada no site), logotipo e ícones em SVG
 - **Images / Imagens:** WebP
 - **Data / Dados:** JSON files in `data/` (menu, footer, social links, cookie notice, authorship)
+- **Comments / Comentários:** moderated before publication; held temporarily in Cloudflare KV; the optional email is deleted on approval / moderados antes da publicação; guardados temporariamente no KV da Cloudflare; o e-mail, opcional, é apagado na aprovação
 - **Search / Busca:** client-side, no data sent to servers / no navegador, sem envio de dados a servidores
 - **Statistics / Estatísticas:** Google Analytics 4, statistics only, loaded only after consent / somente estatísticas, carregado só depois do consentimento
 - **Embedded media / Mídia incorporada:** YouTube (privacy-enhanced mode) and Spotify, loaded only after a click / carregados só depois de um clique
@@ -117,9 +118,9 @@ Texts with a future date only appear on their scheduled day; to preview them, us
 
 ## Privacy / Privacidade
 
-By default the site uses no advertising or trackers. Analytics loads only if the visitor allows it, and YouTube and Spotify load only after a click. See the [Privacy policy](https://devirbordado.space/en-us/privacy-policy/) and the [Cookie policy](https://devirbordado.space/en-us/cookie-policy/).
+By default the site uses no advertising or trackers. Analytics loads only if the visitor allows it, and YouTube and Spotify load only after a click. Personal data is handled only if you subscribe to the newsletter, comment or write to us. See the [Privacy policy](https://devirbordado.space/en-us/privacy-policy/) and the [Cookie policy](https://devirbordado.space/en-us/cookie-policy/).
 
-*Por padrão, o site não usa publicidade nem rastreadores. As estatísticas só carregam se a pessoa permitir, e YouTube e Spotify só carregam depois de um clique. Veja a [Política de privacidade](https://devirbordado.space/pt-br/politica-de-privacidade/) e a [Política de cookies](https://devirbordado.space/pt-br/politica-de-cookies/).*
+*Por padrão, o site não usa publicidade nem rastreadores. As estatísticas só carregam se a pessoa permitir, e YouTube e Spotify só carregam depois de um clique. Dados pessoais só são tratados se você se inscrever na newsletter, comentar ou escrever para nós. Veja a [Política de privacidade](https://devirbordado.space/pt-br/politica-de-privacidade/) e a [Política de cookies](https://devirbordado.space/pt-br/politica-de-cookies/).*
 
 ---
 
