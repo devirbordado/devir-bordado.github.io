@@ -21,7 +21,7 @@ Hoje estou em um lugar de cura. Estou buscando por mim mesma, depois de andar po
 
 Já houveram momentos em que estivemos muito próximos de nos encontrar, mesmo lugar, mesmas pessoas em comum, mesmos círculos, mas não estávamos prontos um para o outro.
 
-Até que houve um momento em que eu estava parada no lugar certo, na hora certa e comas perguntas certas, e te encontrei. Mas você, infelizmente, não me encontrou de volta. Ainda.
+Até que houve um momento em que eu estava parada no lugar certo, na hora certa e com as perguntas certas, e te encontrei. Mas você, infelizmente, não me encontrou de volta. Ainda.
 
 Nós temos um caminho muito longo para percorrer. E os próximos anos serão de grandes transformações para ambos.
 

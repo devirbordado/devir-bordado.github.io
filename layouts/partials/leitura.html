@@ -1,0 +1,13 @@
+{{- /* Tempo estimado de leitura de um post. Uso: {{ partial "leitura.html" $p }}
+       Ajustes em data/leitura.json: "palavras_por_minuto" (padrão 200) e
+       "faixa": true para mostrar um intervalo, por exemplo "6–8 min". */ -}}
+{{- $c := hugo.Data.leitura | default dict -}}
+{{- $w := float .WordCount -}}
+{{- $v := float (or $c.palavras_por_minuto 200) -}}
+{{- $txt := printf "%d min" (int (math.Max 1 (math.Ceil (div $w $v)))) -}}
+{{- if $c.faixa -}}
+  {{- $lo := int (math.Max 1 (math.Ceil (div $w (float (or $c.palavras_por_minuto_rapido 250))))) -}}
+  {{- $hi := int (math.Max 1 (math.Ceil (div $w (float (or $c.palavras_por_minuto_lento 170))))) -}}
+  {{- if ne $lo $hi }}{{ $txt = printf "%d–%d min" $lo $hi }}{{ else }}{{ $txt = printf "%d min" $lo }}{{ end -}}
+{{- end -}}
+<span class="lt" style="color:#7D443A;font-weight:600" title="{{ if eq site.Language.Lang "en-us" }}Estimated reading time{{ else }}Tempo estimado de leitura{{ end }}">· {{ $txt }}</span>

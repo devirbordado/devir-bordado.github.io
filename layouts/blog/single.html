@@ -8,7 +8,7 @@
 {{ else }}<style>.cover-pending{margin:.2rem 0 .5rem;padding:1.1rem 1.2rem;border:1px dashed #B8A893;background:#F5EFE3;text-align:center;font-style:italic;font-size:.95rem;line-height:1.5;color:#35322F}</style>
 <p class="cover-pending">{{ if eq site.Language.Lang "en-us" }}The cover image for this post is being embroidered. Once it is ready, it will frame this post.{{ else }}A imagem de capa deste post está sendo bordada. Assim que ficar pronta, ela irá emoldurar esta postagem.{{ end }}</p>
 {{ end }}<h1 class="ptitle">{{ .Title }}</h1>
-<p class="pmeta">{{ range .GetTerms (i18n "tax_selo") }}<a class="selo" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> {{ end }}<span>{{ .Date | time.Format ":date_long" }}</span></p>
+<p class="pmeta">{{ range .GetTerms (i18n "tax_selo") }}<a class="selo" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> {{ end }}<span>{{ .Date | time.Format ":date_long" }} {{ partial "leitura.html" . }}</span></p>
 <div class="prose">{{ .Content }}</div>
 {{ with .Params.original }}<figure class="orig"><img src="{{ . }}" alt="{{ $.Params.original_alt }}" loading="lazy"><figcaption><span>{{ i18n "orig_text" }}</span> {{ i18n "img_label" }}: {{ $.Params.original_caption }} {{ i18n "src_label" }}: {{ $.Params.original_source }}{{ if $.Params.bordado }}<br><a href="{{ "downloads/" | relLangURL }}">{{ i18n "orig_link" }}</a>{{ end }}</figcaption></figure>{{ end }}
 {{ with .Params.fontes }}<details class="src"><summary>{{ i18n "src_summary" }}</summary><ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul></details>{{ end }}
