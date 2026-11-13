@@ -1,6 +1,6 @@
 ---
 title: "Ancestralidade de Nanã"
-date: 2026-10-18T07:50:00
+date: 2026-10-28T07:50:00
 translationKey: "2026102801"
 selos: ["Cosmologias"]
 tags: ["ancestralidade", "arquétipos", "Nanã", "orixás", "simbolismo"]
