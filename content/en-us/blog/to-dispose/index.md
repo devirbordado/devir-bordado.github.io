@@ -7,7 +7,10 @@ tags: ["cycles", "music", "time"]
 bordado: false
 ---
 
-*“Essa canção é por você* – (This song is for you) *Que já cansou de escutar* – (Who is tired of listening) *Esteve vivo sem viver* – (You were alive without living) *Mas não deixou de acreditar”*– (But you never stopped believing)
+*“Essa canção é por você* – (This song is for you) 
+*Que já cansou de escutar* – (Who is tired of listening) 
+*Esteve vivo sem viver* – (You were alive without living) 
+*Mas não deixou de acreditar”*– (But you never stopped believing)
 
 This excerpt is part of the lyrics of a song called *Balada da Contramão*, by one of my favorite bands: *A Banda Mais Bonita da Cidade* (The Most Beautiful Band in Town).
 
@@ -45,7 +48,8 @@ It also speaks about placing something at one’s disposal, offering space, putt
 
 Perhaps that is precisely where the hardest part lies.
 
-*“Eu vou tentar mais uma vez –* (I will try once more) *Por quem não pode mais tentar*” – (For those who can no longer try)
+*“Eu vou tentar mais uma vez* - (I will try once more)
+*Por quem não pode mais tentar*” – (For those who can no longer try)
 
 When I decided to graduate again, I wasn’t just choosing a new education, a second career transition; I was actually disposing time, energy, and a part of my life toward a possibility that I didn’t even know exactly where it would lead me, and honestly, I’m still finding out.
 
