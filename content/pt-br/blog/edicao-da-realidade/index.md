@@ -28,11 +28,11 @@ A campanha foi marcada por uma novidade: a televisão. Collor percebeu antes dos
 
 No dia 14 de dezembro de 1989, Collor e Lula se enfrentaram no último debate do segundo turno, transmitido ao vivo pela Rede Globo. Dois dias antes da eleição.
 
-No dia seguinte, o*Jornal Nacional*exibiu uma versão editada do debate. E aqui está o ponto central: a edição não foi neutra. Collor apareceu atacando, Lula apareceu se defendendo. O tempo de fala concedido a Collor foi de 3 minutos e 34 segundos. O de Lula, 2 minutos e 22 segundos. O direito de resposta de Lula, garantido no debate ao vivo, simplesmente desapareceu na edição.
+No dia seguinte, o *Jornal Nacional* exibiu uma versão editada do debate. E aqui está o ponto central: a edição não foi neutra. Collor apareceu atacando, Lula apareceu se defendendo. O tempo de fala concedido a Collor foi de 3 minutos e 34 segundos. O de Lula, 2 minutos e 22 segundos. O direito de resposta de Lula, garantido no debate ao vivo, simplesmente desapareceu na edição.
 
-O resultado todos conhecemos: Collor venceu por 53% a 47%. A edição do*Jornal Nacional*é amplamente citada como um dos fatores que influenciaram o eleitorado naqueles dois dias que antecederam a votação.
+O resultado todos conhecemos: Collor venceu por 53% a 47%. A edição do Jornal Nacional é amplamente citada como um dos fatores que influenciaram o eleitorado naqueles dois dias que antecederam a votação.
 
-Em 2015, durante as comemorações dos 50 anos da emissora, a Globo revisitou o episódio. No site*Memória Globo*, o link que dá acesso ao caso é nomeado “Erro”. Mas, no texto que o acompanha, a palavra “erro” não aparece nenhuma vez.
+Em 2015, durante as comemorações dos 50 anos da emissora, a Globo revisitou o episódio. No site *Memória Globo*, o link que dá acesso ao caso é nomeado “Erro”. Mas, no texto que o acompanha, a palavra “erro” não aparece nenhuma vez.
 
 Em vez disso, a emissora prefere termos como “polêmica” e “questionamento”. A âncora William Bonner, ao apresentar o caso, afirmou que a edição “acabou no fim também ficando eclipsada por uma polêmica que surgiu”, uma formulação que trata o episódio como um fenômeno espontâneo, e não como o resultado de uma escolha editorial.
 
