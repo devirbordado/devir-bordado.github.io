@@ -4,7 +4,15 @@ date: 2026-04-29T20:47:00
 translationKey: "2026042901"
 seals: ["Overtone"]
 tags: ["becoming", "Kundalini", "Ouroboros", "serpent", "symbolism"]
-bordado: false
+cover: /assets/images/blog/2026042901-capa.webp
+cover_alt: "Serpent and moon"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026042901-original.webp
+original_alt: "Serpent and moon."
+original_caption: "Embroidery on raw cotton canvas fabric, in a 10cm circular bamboo hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "SARASWATI, Satyananda. *Kundalini Tantra*. Bihar, India: Yoga Publications Trust, 1996. (Suggested book [here](https://www.amazon.com.br/Kundalini-Tantra-Portugu%C3%AAs-Satyananda-Saraswati/dp/8561570040))"
 ---

@@ -4,7 +4,15 @@ date: 2026-11-01T19:55:51
 translationKey: "2026110101"
 selos: ["Meraki"]
 tags: ["cosmologia indígena", "feminismo", "folclore", "Iemanjá", "simbolismo"]
-bordado: false
+cover: /assets/images/blog/2026110101-capa.webp
+cover_alt: "Moça"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026110101-original.webp
+original_alt: "Moça."
+original_caption: "Bordado em tecido de algodão e bastidor circular de MDF de 10cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 ---
 
 Eu nasci numa quarta-feira.

@@ -4,7 +4,15 @@ date: 2026-04-29T19:30:00
 translationKey: "2026042901"
 selos: ["Entrelinhas"]
 tags: ["devir", "Kundalini", "Ouroboros", "serpente", "simbolismo"]
-bordado: false
+cover: /assets/images/blog/2026042901-capa.webp
+cover_alt: "Serpente e lua"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026042901-original.webp
+original_alt: "Serpente e lua."
+original_caption: "Bordado em tecido de lona de algodão cru e bastidor circular de bamboo de 10cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "SARASWATI, Satyananda. **Kundalini Tantra**. Bihar, Índia: Yoga Publications Trust, 1996. (Sugestão de livro [aqui](https://www.amazon.com.br/Kundalini-Tantra-Portugu%C3%AAs-Satyananda-Saraswati/dp/8561570040))"
 ---
@@ -23,7 +31,7 @@ Antes de subir, a serpente repousa. Antes da expansão, existe enraizamento. Ant
 
 Passei a compreender que nenhuma transformação acontece apenas no plano das ideias. Toda mudança precisa atravessar o corpo, o tempo, a experiência, os afetos e até mesmo aquilo que preferimos não enxergar em nós.
 
-A imagem da serpente apareça em tantas culturas, algumas vezes como símbolo de renovaçãoo ao trocar de pele. A serpente não deixa de ser quem é apenas por modificar sua pele, ela apenas continua seu processo de transformação.
+A imagem da serpente apareça em tantas culturas, algumas vezes como símbolo de renovação ao trocar de pele. A serpente não deixa de ser quem é apenas por modificar sua pele, ela apenas continua seu processo de transformação.
 
 Foi nesse ponto que comecei a enxergar uma aproximação simbólica com o bordado.
 

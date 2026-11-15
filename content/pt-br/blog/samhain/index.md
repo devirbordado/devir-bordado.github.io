@@ -4,7 +4,15 @@ date: 2026-10-31T19:55:13
 translationKey: "2026103101"
 selos: ["Celtas"]
 tags: ["magia", "Roda do Ano", "Samhain"]
-bordado: false
+cover: /assets/images/blog/2026103101-capa.webp
+cover_alt: "Doçuras ou travessuras?"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026103101-original.webp
+original_alt: "Doçuras ou travessuras?."
+original_caption: "Bordado em tecido de algodão e bastidor circular de MDF de 15cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "BLAKE, Deborah. **Diário Mágico**: 366 dias de magia e equilíbrio. Tradução de Flávia Souto Maior. Rio de Janeiro: DarkSide Books, 2022. (Sugestão de livro [aqui](https://www.amazon.com.br/DI%C3%81RIO-M%C3%81GICO-DIAS-MAGIA-EQUIL%C3%8DBRIO/dp/655598175X/ref=pd_lpo_d_sccl_3/139-8443614-0874064?pd_rd_w=WsSZE&content-id=amzn1.sym.a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_p=a2197dac-0fbe-4cc8-beca-b52f96ea33d5&pf_rd_r=0G05XA82W40DJB87TWXN&pd_rd_wg=3Okzw&pd_rd_r=bcd59d1f-e214-451a-bbd4-00cb1cf5039b&pd_rd_i=655598175X&psc=1))"
   - "COOK, Fiona. **A Roda do Ano**: a linguagem secreta do ritmo da natureza. Tradução de Gina Santiago. Ilustrações de Jessica Roux. São Paulo: DarkSide Books, 2025. (Sugestão de livro [aqui](https://www.amazon.com.br/RODA-ANO-LINGUAGEM-ILUSTRADA-FLORIOGRAFIA/dp/6555985143/ref=asc_df_6555985143?mcid=8127f66ec50537adbb9765997bd611dd&tag=googleshopp00-20&linkCode=df0&hvadid=709965221039&hvpos=&hvnetw=g&hvrand=713134959328547733&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100576&hvtargid=pla-2612476487192&psc=1&hvocijid=713134959328547733-6555985143-&hvexpln=0&language=pt_BR))"

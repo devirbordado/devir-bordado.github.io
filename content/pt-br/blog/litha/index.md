@@ -4,7 +4,15 @@ date: 2026-12-21T02:50:00
 translationKey: "2026122101"
 selos: ["Celtas"]
 tags: ["Litha", "magia", "Roda do Ano", "solstício", "verão"]
-bordado: false
+cover: /assets/images/blog/2026122101-capa.webp
+cover_alt: "Abelha, mel e flor"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026122101-original.webp
+original_alt: "Abelha, mel e flor."
+original_caption: "Bordado em tecido de algodão e bastidor de MDF."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "BLAKE, Deborah. **Diário Mágico**: 366 dias de magia e equilíbrio. Tradução de Flávia Souto Maior. Rio de Janeiro: DarkSide Books, 2022. (Sugestão de livro [aqui](https://www.amazon.com.br/dp/655598175X))"
   - "COOK, Fiona. **A Roda do Ano**: a linguagem secreta do ritmo da natureza. Tradução de Gina Santiago. Ilustrações de Jessica Roux. São Paulo: DarkSide Books, 2025. (Sugestão de livro [aqui](https://www.amazon.com.br/dp/6555985143))"

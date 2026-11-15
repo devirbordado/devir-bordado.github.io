@@ -4,7 +4,15 @@ date: 2026-06-05T10:30:00
 translationKey: "2026060501"
 selos: ["Celtas"]
 tags: ["ciclos", "natureza", "Roda do Ano", "tempo", "transformação"]
-bordado: false
+cover: /assets/images/blog/2026060501-capa.webp
+cover_alt: "Respeite seu tempo"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026060501-original.webp
+original_alt: "Respeite seu tempo."
+original_caption: "Bordado em tecido de algodão e bastidor circular de MDF de 15cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "COOK, Fiona. **A Roda do Ano**: a linguagem secreta do ritmo da natureza. Tradução de Gina Santiago. Ilustrações de Jessica Roux. São Paulo: DarkSide Books, 2025. (Sugestão de livro [aqui](https://www.amazon.com.br/RODA-ANO-LINGUAGEM-ILUSTRADA-FLORIOGRAFIA/dp/6555985143/ref=asc_df_6555985143?mcid=8127f66ec50537adbb9765997bd611dd&tag=googleshopp00-20&linkCode=df0&hvadid=709965221039&hvpos=&hvnetw=g&hvrand=713134959328547733&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100576&hvtargid=pla-2612476487192&psc=1&hvocijid=713134959328547733-6555985143-&hvexpln=0&language=pt_BR))."
 ---

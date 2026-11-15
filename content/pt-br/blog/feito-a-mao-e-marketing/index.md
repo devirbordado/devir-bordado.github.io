@@ -4,7 +4,15 @@ date: 2026-06-04T07:50:00
 translationKey: "2026060401"
 selos: ["Leituras"]
 tags: ["bordado", "história", "memória"]
-bordado: false
+cover: /assets/images/blog/2026060401-capa.webp
+cover_alt: "Flowers in red"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026060401-original.webp
+original_alt: "Flowers in red."
+original_caption: "Bordado em tecido de algodão e bastidor circular de 15cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "Denúncia original – a primeira notícia (Proceso, 17/05/2026): “Denuncian abuso laboral y atropello a la cultura indígena en colección de Adidas” — com depoimento completo de Tatiana Bernaldez ([Aqui](https://cms.proceso.com.mx/cultura/2026/5/17/denuncian-abuso-laboral-atropello-la-cultura-indigena-en-coleccion-de-adidas-para-la-seleccion-374141.html))"
   - "El Mexicano (17/05/2026): “Acusan a Adidas de desvirtuar bordado indígena y pagar 36 pesos por hora” — inclui declaração da subsecretária de Cultura ([Aqui](https://el-mexicano.com.mx/Noticia/Nacional/93880/Acusan-a-Adidas-de-desvirtuar-bordado-ind%C3%ADgena-y-pagar-36-pesos-por-hora))"

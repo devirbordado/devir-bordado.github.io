@@ -4,7 +4,15 @@ date: 2026-12-21T02:50:00
 translationKey: "2026122101"
 seals: ["Celtic"]
 tags: ["Litha", "magic", "solstice", "Summer", "Wheel of the Year"]
-bordado: false
+cover: /assets/images/blog/2026122101-capa.webp
+cover_alt: "Abelha, mel e flor"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026122101-original.webp
+original_alt: "Abelha, mel e flor."
+original_caption: "Embroidered on cotton fabric."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "Cook, F. (2024). *The wheel of the year: An illustrated guide to nature’s rhythms*. Andrews McMeel Publishing. (Book suggestion [here](https://www.amazon.com.br/dp/1524874809))"
   - "Davies, A. (2023). *The mystical year: Folklore, magic and nature*. Quadrille Publishing. (Book suggestion [here](https://www.amazon.com.br/dp/1524874809))"

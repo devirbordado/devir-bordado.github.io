@@ -4,7 +4,15 @@ date: 2026-06-05T23:22:00
 translationKey: "2026060501"
 seals: ["Celtic"]
 tags: ["cycles", "nature", "time", "transformation", "Wheel of the Year"]
-bordado: false
+cover: /assets/images/blog/2026060501-capa.webp
+cover_alt: "Respeite seu tempo"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026060501-original.webp
+original_alt: "Respeite seu tempo."
+original_caption: "Embroidered on cotton fabric in a 15cm circular MDF hoop, featuring the embroidered phrase: Respect your own timing."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "Cook, F. (2024). *The wheel of the year: An illustrated guide to nature’s rhythms*. Andrews McMeel Publishing. (Book suggestion [here](https://www.amazon.com.br/Wheel-Year-Illustrated-Natures-Rhythms/dp/1524874809/ref=sr_1_2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3NKINZS8259IO&dib=eyJ2IjoiMSJ9.S95a8X5KxgRARmnRN1bdY13GfktC-aggjJOi9_tuXK0VMiM-RjaTEmeRjGsXDTcGkvvOGwglFexBZXbOX0x_61hoHLDgjDB2i1VWnzsfjNHARMK4W3XuBdo4xDdD3yDw11TGlfjrSb1zAiCBYtgT8uoD7-GUjPdepp7Xcj6fF6hFyMMMvExKhN0dfLTUY19soGr1fSxI6bBt66NoqT0cmlxljFYeyLA3955G3ywe6O4.hg11uC8ay6j_8vejmi5_XQsw5v7-i7IhJkSpz8cSAXo&dib_tag=se&keywords=fiona+cook&qid=1786759866&s=books&sprefix=fiona+cook%2Cstripbooks%2C230&sr=1-2&ufe=app_do%3Aamzn1.fos.88ac1f0f-cd00-42df-b2ac-542b26a29c3a))"
 ---

@@ -4,7 +4,15 @@ date: 2026-07-12T10:15:00
 translationKey: "2026071201"
 selos: ["Cosmologias"]
 tags: ["orixás", "Ossaim", "Oxóssi", "Umbanda"]
-bordado: false
+cover: /assets/images/blog/2026071201-capa.webp
+cover_alt: "Espada de são-jorge"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026071201-original.webp
+original_alt: "Espada de são-jorge."
+original_caption: "Bordado em tecido de algodão e bastidor circular de MDF de 13cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "BARROS, José Flávio Pessoa de. **A floresta sagrada de Ossaim**: o segredo das folhas. Rio de Janeiro: Pallas, 2011. (Sugestão de leitura [aqui](https://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://cdn.awsli.com.br/1359/1359621/arquivos/A%20floresta%20sagrada%20de%20Ossaim%20-%20O%20segredo%20das%20folhas.pdf))"
   - "SOUZA, João Marcos. OXÓSSI: O HERÓI DE UMA FLECHA SÓ. Revista Mosaico – Revista de História, Goiânia, Brasil, v. 13, p. 57–63, 2020. DOI: 10.18224/mos.v13i0.7553. (Sugestão de leitura [aqui](https://seer.pucgoias.edu.br/index.php/mosaico/article/view/7553))"

@@ -4,7 +4,15 @@ date: 2026-11-01T19:56:08
 translationKey: "2026110101"
 seals: ["Meraki"]
 tags: ["feminism", "folklore", "Iemanjá", "indigenous cosmology", "symbolism"]
-bordado: false
+cover: /assets/images/blog/2026110101-capa.webp
+cover_alt: "Moça"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026110101-original.webp
+original_alt: "Moça."
+original_caption: "Embroidered on cotton fabric in a 10cm circular MDF hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 ---
 
 I was born on a Wednesday.
