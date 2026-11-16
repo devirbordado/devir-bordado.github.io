@@ -4,7 +4,15 @@ date: 2026-08-12T22:38:05
 translationKey: "2026081201"
 selos: ["Geek"]
 tags: ["jogo", "música", "simbolismo", "tecnologia", "transformação"]
-bordado: false
+cover: /assets/images/blog/2026081201-capa.webp
+cover_alt: "Balão"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026081201-original.webp
+original_alt: "Balão."
+original_caption: "Bordado em tecido de lona de algodão cru e bastidor circular de 10cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "DE LUCCA, Matheus; YIN-POOLE, Wesley. **Após uma década de No Man’s Sky, jogadores exploraram menos de 1% dos planetas da imensidão do universo do jogo**. IGN Brasil, 12 ago. 2026. ([Aqui](https://br.ign.com/no-mans-sky/155208/apos-uma-decada-de-no-mans-sky-jogadores-exploraram-menos-de-1-dos-planetas-da-imensidao-do-universo))"
   - "LIMA, Michael “michaeldmelo”. **No Man’s Sky comemora 10 anos da maior volta por cima dos jogos**. Xbox Power, 11 ago. 2026. ([Aqui](https://www.xboxpower.com.br/2026/08/11/no-mans-sky-comemora-10-anos-da-maior-volta-por-cima-dos-jogos/))"

@@ -4,6 +4,14 @@ date: 2026-06-17T11:20:00
 translationKey: "2026061701"
 seals: ["Recipe"]
 tags: ["apple", "autumn", "cake", "Mabon", "recipes"]
+cover: /assets/images/blog/2026061701-capa.webp
+cover_alt: "Bolo em prato azul"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026061701-original.webp
+original_alt: "Bolo em prato azul."
+original_caption: "Food Photography."
+original_source: "Iara Lima (2026)"
 bordado: false
 ---
 

@@ -4,6 +4,14 @@ date: 2026-10-21T07:51:00
 translationKey: "2026102101"
 seals: ["Recipe"]
 tags: ["fried", "recipes"]
+cover: /assets/images/blog/2026102101-capa.webp
+cover_alt: "Bowl rosa"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026102101-original.webp
+original_alt: "Bowl rosa."
+original_caption: "Food Photography."
+original_source: "Iara Lima (2026)"
 bordado: false
 ---
 

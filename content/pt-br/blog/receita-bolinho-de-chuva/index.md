@@ -4,6 +4,14 @@ date: 2026-10-21T07:50:00
 translationKey: "2026102101"
 selos: ["Receitas"]
 tags: ["frito", "receitas"]
+cover: /assets/images/blog/2026102101-capa.webp
+cover_alt: "Bowl rosa"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026102101-original.webp
+original_alt: "Bowl rosa."
+original_caption: "Fotografia Gastronômica."
+original_source: "Iara Lima (2026)"
 bordado: false
 ---
 

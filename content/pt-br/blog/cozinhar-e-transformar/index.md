@@ -4,7 +4,15 @@ date: 2026-06-11T10:30:00
 translationKey: "2026061101"
 selos: ["Receitas"]
 tags: ["magia", "receitas"]
-bordado: false
+cover: /assets/images/blog/2026061101-capa.webp
+cover_alt: "Caldeirão"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026061101-original.webp
+original_alt: "Caldeirão."
+original_caption: "Bordado em tecido de lona de algodão cru e bastidor circular de 10cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "MURPHY-HISCOCK, Arin. **Bruxa natural**: guia essencial de ervas, flores, cristais e outras magias. Tradução de Stephanie Borges. Rio de Janeiro: DarkSide Books, 2021. (Sugestão de livro [aqui](https://www.amazon.com.br/BRUXA-NATURAL-ESSENCIAL-FLORES-CRISTAIS/dp/6555980923/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3CILE284LUDMU&dib=eyJ2IjoiMSJ9.IBaejXewCIPbfXGNsHIRu_hdQSww0lzzp34LDHCUOklJcCEP15QY4PBNijPoTrJ3DtD6O-nNxjcKgGc5ue9h5bFrMJ8vaA27_xQbR0271mIU4ykHnXvg8EvgUmfdwgm-7zVLmu19q7obvBmtYcdfD7b3vcf0iXDDK52l59hWSGDSGDx2Wagg4g_c_P-BigmdrFWFERtlI7EfZwiFw9XZksxcKYaEegCPpdOafSJJcYp9SnlptlBbTyGwyAl0RTRGTz31pMHR_WV69tKZiQU-BmODA9FgIUdV8VieIglYfDQ.KGis2dUWLDX8Bv-M7NuhSLliWTcxRtmZMe3rLKMRZCQ&dib_tag=se&keywords=Arin+Murphy-Hiscock&qid=1778961944&sprefix=arin+murphy-hiscock%2Caps%2C312&sr=8-1))."
   - "MURPHY-HISCOCK, Arin. **A Casa da Bruxa Natural**: rituais, feitiços e receitas para criar um lar mágico. Tradução de Cláudia Mello Belhassof. Rio de Janeiro: DarkSide Books, 2022. (Sugestão de livro [aqui](https://www.amazon.com.br/Casa-Bruxa-Natural-Arin-Murphy-Hiscock/dp/6555981482/ref=sr_1_5?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3CILE284LUDMU&dib=eyJ2IjoiMSJ9.IBaejXewCIPbfXGNsHIRu_hdQSww0lzzp34LDHCUOklJcCEP15QY4PBNijPoTrJ3DtD6O-nNxjcKgGc5ue9h5bFrMJ8vaA27_xQbR0271mIU4ykHnXvg8EvgUmfdwgm-7zVLmu19q7obvBmtYcdfD7b3vcf0iXDDK52l59hWSGDSGDx2Wagg4g_c_P-BigmdrFWFERtlI7EfZwiFw9XZksxcKYaEegCPpdOafSJJcYp9SnlptlBbTyGwyAl0RTRGTz31pMHR_WV69tKZiQU-BmODA9FgIUdV8VieIglYfDQ.KGis2dUWLDX8Bv-M7NuhSLliWTcxRtmZMe3rLKMRZCQ&dib_tag=se&keywords=Arin+Murphy-Hiscock&qid=1778961944&sprefix=arin+murphy-hiscock%2Caps%2C312&sr=8-5))."

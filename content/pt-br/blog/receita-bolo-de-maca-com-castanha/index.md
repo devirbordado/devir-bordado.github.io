@@ -4,6 +4,14 @@ date: 2026-06-17T10:30:00
 translationKey: "2026061701"
 selos: ["Receitas"]
 tags: ["bolo", "Mabon", "maçã", "outono", "receitas"]
+cover: /assets/images/blog/2026061701-capa.webp
+cover_alt: "Bolo em prato azul"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026061701-original.webp
+original_alt: "Bolo em prato azul."
+original_caption: "Fotografia Gastronômica."
+original_source: "Iara Lima (2026)"
 bordado: false
 ---
 

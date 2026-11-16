@@ -4,7 +4,15 @@ date: 2026-06-11T10:45:00
 translationKey: "2026061101"
 seals: ["Recipe"]
 tags: ["magic", "recipes"]
-bordado: false
+cover: /assets/images/blog/2026061101-capa.webp
+cover_alt: "Caldeirão"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026061101-original.webp
+original_alt: "Caldeirão."
+original_caption: "Embroidery on raw cotton canvas fabric, in a 10cm circular hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "Murphy-Hiscock, A. (2017). *The green witch: Your complete guide to the natural magic of herbs, flowers, essential oils, and more*. Adams Media. (Book suggestion [here](https://www.amazon.com.br/Green-Witch-Complete-Natural-Essential-ebook/dp/B071XSVBQC/?_encoding=UTF8&pd_rd_w=RnovC&content-id=amzn1.sym.ff28fb28-4637-40ce-b12c-4ea061bfac8f&pf_rd_p=ff28fb28-4637-40ce-b12c-4ea061bfac8f&pf_rd_r=139-8443614-0874064&pd_rd_wg=5hpxi&pd_rd_r=9ef74ce0-9dc5-4d3f-9ab2-b13fe901d951))"
   - "Murphy-Hiscock, A. (2018). *The witch’s book of self-care: Magical ways to pamper, soothe, and care for your body and spirit*. Adams Media. (Book suggestion [here](https://www.amazon.com.br/House-Witch-Complete-Creating-Magical-ebook/dp/B07D34QVJH/?_encoding=UTF8&pd_rd_w=RnovC&content-id=amzn1.sym.ff28fb28-4637-40ce-b12c-4ea061bfac8f&pf_rd_p=ff28fb28-4637-40ce-b12c-4ea061bfac8f&pf_rd_r=139-8443614-0874064&pd_rd_wg=5hpxi&pd_rd_r=9ef74ce0-9dc5-4d3f-9ab2-b13fe901d951))"

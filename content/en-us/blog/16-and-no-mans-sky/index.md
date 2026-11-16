@@ -4,7 +4,15 @@ date: 2026-08-12T22:51:44
 translationKey: "2026081201"
 seals: ["Geek"]
 tags: ["game", "music", "symbolism", "technology", "transformation"]
-bordado: false
+cover: /assets/images/blog/2026081201-capa.webp
+cover_alt: "Balão"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026081201-original.webp
+original_alt: "Balão."
+original_caption: "Embroidery on raw cotton canvas fabric, in a 10cm circular hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "Gfinity Esports. (2026, August 11). *No Man’s Sky* celebrates 10th anniversary with free Cosmos update. ([Here](https://www.gfinityesports.com/article/no-mans-sky-celebrates-10th-anniversary-with-free-cosmos-update))"
   - "Martin, M. (2015, August 4). Here are 41 facts you didn’t know about *No Man’s Sky*. *IGN*. ([Here](https://www.ign.com/articles/2015/08/04/here-are-41-facts-you-didnt-know-about-no-mans-sky))"

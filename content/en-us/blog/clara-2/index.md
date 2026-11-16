@@ -4,7 +4,15 @@ date: 2026-11-16T02:50:00
 translationKey: "2026111601"
 seals: ["Geek"]
 tags: ["Doctor Who", "feminism", "geek", "nerd", "transformation"]
-bordado: false
+cover: /assets/images/blog/2026111601-capa.webp
+cover_alt: "Clara gallifreyan"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026111601-original.webp
+original_alt: "Clara gallifreyan."
+original_caption: "Embroidery on raw cotton canvas fabric, in a 10cm circular hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 ---
 
 There are stories that continue to accompany us long after they end. Not because they have all the answers, but because, as we change, they also seem to say different things.

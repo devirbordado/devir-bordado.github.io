@@ -4,7 +4,15 @@ date: 2026-07-10T22:56:00
 translationKey: "2026071001"
 seals: ["Geek"]
 tags: ["linguistics", "music", "technology", "token", "Tolkien"]
-bordado: false
+cover: /assets/images/blog/2026071001-capa.webp
+cover_alt: "Folha de Lórien"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026071001-original.webp
+original_alt: "Folha de Lórien."
+original_caption: "Embroidery on unbleached cotton fabric in a 10cm circular hoop."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "**ARANTES, Luciana; SOPENA, Julien.** Ensuring Token Circulation and Uniqueness in Algorithms with Nodes Organized in a Ring Subject to Failures. In: WORKSHOP DE TESTES E TOLERÂNCIA A FALHAS (WTF), 11., 2010, Gramado/RS. *Anais* \\[…\\]. Porto Alegre: Sociedade Brasileira de Computação, 2010. (Suggested reading [here](https://sol.sbc.org.br/index.php/wtf/article/view/23093))"
   - "**USER AUTHENTICATION VIA TOKEN.** *ANAIS DO EGRAD*, \\[S. l.\\], v. 3, n. 6, 2016. (Suggested reading [here](https://anaisonline.uems.br/index.php/egrad/article/view/3538))"

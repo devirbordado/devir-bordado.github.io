@@ -4,6 +4,14 @@ date: 2026-06-14T11:20:00
 translationKey: "2026061401"
 seals: ["Recipe"]
 tags: ["apple", "autumn", "Mabon", "recipes", "tea"]
+cover: /assets/images/blog/2026061401-capa.webp
+cover_alt: "Caneca vermelha"
+cover_caption: "Post cover, illustration created from the original photograph."
+cover_source: "AI-generated image from a photograph by Iara Lima (2026)"
+original: /assets/images/blog/2026061401-original.webp
+original_alt: "Caneca vermelha."
+original_caption: "Food Photography."
+original_source: "Iara Lima (2026)"
 bordado: false
 ---
 

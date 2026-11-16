@@ -4,7 +4,15 @@ date: 2026-09-02T07:50:00
 translationKey: "2026090201"
 selos: ["Entrelinhas"]
 tags: ["arquétipos", "Grécia", "hermetismo", "simbolismo"]
-bordado: false
+cover: /assets/images/blog/2026090201-capa.webp
+cover_alt: "Penas"
+cover_caption: "Capa do post, ilustração criada a partir da fotografia original."
+cover_source: "imagem gerada por IA a partir de fotografia de Iara Lima (2026)"
+original: /assets/images/blog/2026090201-original.webp
+original_alt: "Penas."
+original_caption: "Bordado em tecido de lona de algodão cru e bastidor circular de 10cm."
+original_source: "Iara Lima (2026)"
+bordado: true
 fontes:
   - "CÉSAR, Danillo. Hermes Trismegisto e a intenção do texto hermético. **Classica – Revista Brasileira de Estudos Clássicos**, *\\[S. l.\\]*, v. 38, p. 1–20, 2026. (Sugestão de leitura [aqui](https://classica.emnuvens.com.br/classica/article/view/1140))"
   - "EFFGEN, André Luís Silva. Entre Thoth e Hermes Trismegisto: as cosmogonias egípcias na literatura hermética. 2023. 174 f. Dissertação (Mestrado em Ciências das Religiões) – Centro de Educação, Universidade Federal da Paraíba, João Pessoa, 2023. (Sugestão de leitura [aqui](https://repositorio.ufpb.br/jspui/bitstream/123456789/32577/1/Andr%C3%A9Lu%C3%ADsSilvaEffgen_Dissert.pdf))"
