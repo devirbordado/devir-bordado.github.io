@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
-  # Reconstrói todo dia às 03:00 (horário de Brasília) para que os textos
-  # com data futura apareçam sozinhos no dia marcado.
+  # Reconstrói todo dia para que os textos com data futura apareçam sozinhos.
+  # O agendamento do GitHub atrasa por horas e às vezes é descartado, então há
+  # três horários (minutos "quebrados" sofrem menos atraso que as horas cheias):
+  #   03:23, 06:41 e 09:17 (Brasília). O disparo preciso, das 02:55, é feito pelo
+  # Worker "devir-disparo" do Cloudflare, via workflow_dispatch.
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "23 6 * * *"
+    - cron: "41 9 * * *"
+    - cron: "17 12 * * *"
   workflow_dispatch:
 
 permissions:
