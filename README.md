@@ -48,10 +48,10 @@ The name **Devir Bordado** combines two concepts related to transformation and t
 |---|---|---|
 | Source / Fonte | **GitHub** | stores code, texts and images, with version history / guarda código, textos e imagens, com histórico de versões |
 | Generator / Gerador | **Hugo** 0.168 Extended | turns Markdown texts and templates into static pages / transforma textos em Markdown e modelos em páginas estáticas |
-| Publishing / Publicação | **GitHub Pages** + GitHub Actions | builds on every change and daily at 03:00 (Brasília) / compila a cada alteração e todos os dias às 03:00 (Brasília) |
+| Publishing / Publicação | **GitHub Pages** + GitHub Actions | builds on every change and every day; GitHub's own scheduler can run hours late, so an exact trigger at 02:55 (Brasília) comes from a Cloudflare Worker, with backup runs during the morning / compila a cada alteração e todos os dias; como o agendador do próprio GitHub pode atrasar horas, um disparo exato às 02:55 (Brasília) vem de um Worker da Cloudflare, com execuções de reserva pela manhã |
 | Domain / Domínio | **Hostinger** | domain, DNS and institutional email / domínio, DNS e e-mail institucional |
-| Functions / Funções | **Cloudflare** | anti-bot check (Turnstile), sign-up function and comments with prior moderation (Workers + KV) active; download files *in activation / em ativação* / verificação anti-robô (Turnstile), função de cadastro e comentários com moderação prévia (Workers + KV) ativos; arquivos para download em ativação |
-| Newsletter | **Brevo** | double opt-in sign-up with separate PT and EN lists; automatic sending by RSS *in activation / em ativação* / cadastro com confirmação em duas etapas, listas PT e EN separadas; envio automático por RSS em ativação |
+| Functions / Funções | **Cloudflare** | anti-bot check (Turnstile), sign-up function, comments with prior moderation (Workers + KV) and the scheduled publishing trigger (Worker with cron) active; download files *in activation / em ativação* / verificação anti-robô (Turnstile), função de cadastro, comentários com moderação prévia (Workers + KV) e disparo agendado de publicação (Worker com cron) ativos; arquivos para download em ativação |
+| Newsletter | **Brevo** | double opt-in sign-up with separate PT and EN lists; automatic sending by RSS active, checked daily at 18:00 (Brasília) and sent only when there is a new text / cadastro com confirmação em duas etapas, listas PT e EN separadas; envio automático por RSS ativo, verificado todos os dias às 18:00 (Brasília) e enviado só quando há texto novo |
 | Archive / Arquivo | **Zenodo** | archived versions with DOI / versões arquivadas com DOI |
 
 ---
@@ -144,8 +144,23 @@ The content has a single author, so the repository does not accept text contribu
 
 ## References / Referências
 
-References will be added as the project evolves.
-*As referências serão adicionadas à medida que o projeto evoluir.*
+### Conceptual foundation / Fundamento conceitual
+The name of the laboratory comes from the philosophical concept of **becoming** (French: *devenir*). The idea of "becomings" as processes of continuous transformation is central to the work of Gilles Deleuze, developed alone and later in partnership with Félix Guattari.
+
+*O nome do laboratório vem do conceito filosófico de **devir** (em francês: *devenir*). A ideia de "devires" como processos de transformação contínua é central na obra de Gilles Deleuze, desenvolvida sozinho e, mais tarde, em parceria com Félix Guattari.*
+
+- DELEUZE, Gilles. *Nietzsche e a Filosofia*. (1962).
+- DELEUZE, Gilles. *Lógica do Sentido*. (1969).
+- DELEUZE, Gilles; GUATTARI, Félix. *Mil Platôs: capitalismo e esquizofrenia*. Tradução de Ana Lúcia de Oliveira e Lúcia Cláudia Leão. São Paulo: Editora 34, 1996. v. 3.
+
+### Methodological inspirations / Inspirações metodológicas
+The digital architecture of this laboratory draws on contemporary concepts of knowledge organization and web design:
+
+*A arquitetura digital deste laboratório se inspira em conceitos contemporâneos de organização do conhecimento e design de web:*
+
+- **Digital Gardens / Jardins Digitais:** the idea of a living, evolving notebook, rather than a static blog. / *a ideia de um caderno vivo e em evolução, e não um blog estático.*
+- **Open Archives / Arquivos Abertos:** the commitment to public and citable documentation. / *o compromisso com a documentação pública e citável.*
+- **Slow Web / Web Lenta:** a design that respects the reader's time and attention. / *um design que respeita o tempo e a atenção de quem lê.*
 
 ---
 
