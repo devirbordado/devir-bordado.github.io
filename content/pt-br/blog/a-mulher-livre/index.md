@@ -21,7 +21,7 @@ Essa mulher já teve muitos nomes. Na Grécia antiga, chamaram-na de Hécate, a 
 
 O que todas elas têm em comum? Foram demonizadas. Rebaixadas ao papel de “perigosas”, “impuras”, “bruxas”. Porque uma mulher que não se curva ameaça a ordem. Ela lembra que o mundo pode ser diferente.
 
-A escritora nigeriana Chimamanda Ngozi Adichie disse em uma[entrevista](https://www.unidiversidad.com.ar/la-gente-se-siente-muy-incomoda-cuando-las-mujeres-hablamos-de-las-formas-en-que-somos-oprimidas): “A gente se sente muito desconfortável quando as mulheres falam sobre como são oprimidas e excluídas”.
+A escritora nigeriana Chimamanda Ngozi Adichie disse em uma [entrevista](https://www.unidiversidad.com.ar/la-gente-se-siente-muy-incomoda-cuando-las-mujeres-hablamos-de-las-formas-en-que-somos-oprimidas): “A gente se sente muito desconfortável quando as mulheres falam sobre como são oprimidas e excluídas”.
 
 E ela está certa. O desconforto não é à toa. É o medo de que, ao falar, a mulher acorde outras.
 

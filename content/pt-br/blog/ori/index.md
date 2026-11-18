@@ -7,6 +7,7 @@ tags: ["arquétipos", "orixás", "simbolismo", "Umbanda"]
 bordado: false
 fontes:
   - "JAGUN, Márcio de. **Orí**: a cabeça como divindade: história, cultura, filosofia e religiosidade africana. 1. ed. Rio de Janeiro: Litteris Editora., 2015. (Sugestão de livro [aqui](https://www.amazon.com.br/dp/8537402575))"
+  - "JUNG, Carl G. et al. O homem e seus símbolos. 2. ed. Rio de Janeiro: Nova Fronteira, 2008. (Sugestão de livro [aqui](https://www.amazon.com.br/Homem-Seus-S%C3%ADmbolos-Carl-Jung/dp/8569809638/ref=asc_df_8569809638?mcid=826cb5e4bfe13a4d88c516241b80c10b&tag=googleshopp00-20&linkCode=df0&hvadid=709856848245&hvpos=&hvnetw=g&hvrand=12585410320663021984&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100576&hvtargid=pla-655187975458&psc=1&hvocijid=12585410320663021984-8569809638-&hvexpln=0&language=pt_BR))."
 ---
 
 Já parou para pensar que, dentro de você, existe uma centelha divina que guarda sua essência, seu destino e sua conexão com o sagrado? Nas tradições de matriz africana, essa centelha tem nome: *Ori*. Mas Ori é muito mais do que um conceito religioso, ele dialoga profundamente com a psicologia, especialmente com a ideia de autoconhecimento e transformação pessoal.
