@@ -17,3 +17,6 @@
 .prose ol{list-style:decimal}
 .prose li{margin:0 0 .6rem}
 .prose li::marker{color:var(--link)}
+.prose blockquote{margin:1.8rem 0;padding:.2rem 0 .2rem 1.2rem;border-left:3px solid var(--link)}
+.prose blockquote p{margin:0 0 .6rem;font-style:italic}
+.prose blockquote p:last-child{margin:0;font-style:normal;font-size:.95rem}
